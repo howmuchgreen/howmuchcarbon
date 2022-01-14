@@ -1,4 +1,4 @@
-import { HowMuchResult } from ".";
+import { HowMuchResult } from "./HowMuchResult";
 
 export class ResultObject {
   results;

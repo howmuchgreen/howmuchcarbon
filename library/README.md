@@ -26,5 +26,4 @@ npm run dev
 
 # How to use this library
 ## With Node.JS (CommonJS bundle)
-
-
+You can test how to use this library by looking at [the nodeJS usage-test project](../usage-tests/nodejs/README.md).
