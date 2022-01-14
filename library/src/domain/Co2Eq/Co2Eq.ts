@@ -44,8 +44,6 @@ export class Co2Eq {
     unit: Co2EqUnit.codec,
   });
 
-  // static codec = pipe(this.propsCodec, Codec.compose(fromClassCodec(Co2Eq)));
-
   static stringCodec = Codec.make<unknown, string, Co2Eq>(
     pipe(
       Decoder.string,
@@ -74,7 +72,7 @@ export class Co2Eq {
     ),
     {
       encode: (co2Eq) => {
-        return `${co2Eq.format()}kg`;
+        return co2Eq.format();
       },
     }
   );

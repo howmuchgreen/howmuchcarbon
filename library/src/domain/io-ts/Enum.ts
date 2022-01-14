@@ -2,12 +2,11 @@ import * as Either from "fp-ts/Either";
 import { identity, pipe } from "fp-ts/function";
 import * as Codec from "io-ts/lib/Codec";
 import * as Decoder from "io-ts/lib/Decoder";
-import { includes, values } from "lodash/fp";
 
 const isEnumValue =
   <EnumType extends string>(theEnum: Record<string, EnumType>) =>
   (input: unknown): input is EnumType =>
-    pipe(values(theEnum), includes(input));
+    Object.values(theEnum).includes(input as EnumType);
 
 export const makeEnumParser = <EnumType extends string>(
   enumName: string,
