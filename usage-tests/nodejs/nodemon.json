@@ -1,5 +1,5 @@
 {
-  "watch": ["src"],
+  "watch": ["src", "../../library/dist/cjs"],
   "ext": "js,json",
   "ignore": ["src/**/*.spec.js"],
   "exec": "node src/index.js"

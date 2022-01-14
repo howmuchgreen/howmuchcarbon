@@ -6,7 +6,7 @@
   "main": "dist/cjs/bundle.js",
   "types": "dist/types/bundle.d.ts",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "npm run rollup -- --watch",
     "build": "tsc -b",
     "rollup": "rollup -c rollup.config.js",
     "test": "jest"
