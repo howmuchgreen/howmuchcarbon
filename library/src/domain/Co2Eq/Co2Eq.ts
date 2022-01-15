@@ -16,19 +16,9 @@ export class Co2Eq {
       ? co2EqUnit
       : findBestUnitForAmountInGrams(this.averageInGrams);
 
-    switch (unit) {
-      case Co2EqUnit.KILOGRAM:
-        return `${this.averageInGrams / 1e3} kg`;
-
-      case Co2EqUnit.TON:
-        return `${this.averageInGrams / 1e6} ton`;
-
-      case Co2EqUnit.GRAM:
-        return `${this.averageInGrams} g`;
-      
-      default:
-        throw new Error("This should not happen")
-    }
+    const number = this.averageInGrams / Math.pow(10, unit.magnitude);
+    const unitString = number > 1 ? unit.plural : unit.singular;
+    return `${number} ${unitString}`;
   }
 
   static build(co2EqProps: Co2EqProps) {
@@ -52,7 +42,7 @@ export class Co2Eq {
       Decoder.string,
       Decoder.compose({
         decode: (string) => {
-          const REGEX = /^([0-9]*\.?[0-9]*) *(g|kg|ton)$/;
+          const REGEX = /^([0-9]*\.?[0-9]*) *([a-zA-Z]*)$/;
           const regexArray = REGEX.exec(string.replace(/,/, "."));
           if (!regexArray) {
             return Decoder.failure(string, `matching regex ${REGEX.source}`);
@@ -112,6 +102,6 @@ const multiplicationFactor = (unit: Co2EqUnit) => {
       return 1;
 
     default:
-      throw new Error("This should never happen")
+      throw new Error("This should never happen");
   }
 };

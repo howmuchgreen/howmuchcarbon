@@ -33,7 +33,6 @@ export class Co2EqUnit {
     magnitude: Codec.number,
   });
 
-  // static codec = pipe(this.propsCodec, Codec.compose(fromClassCodec(Co2EqUnit)));
   static codec = pipe(
     Codec.string,
     Codec.compose(
@@ -55,18 +54,18 @@ export class Co2EqUnit {
 export namespace Co2EqUnit {
   export const KILOGRAM = Co2EqUnit.build({
     singular: "kg",
-    plural: "kgs",
+    plural: "kg",
     magnitude: 3,
   });
   export const TON = Co2EqUnit.build({
     singular: "ton",
     plural: "tons",
-    magnitude: 3,
+    magnitude: 6,
   });
   export const GRAM = Co2EqUnit.build({
     singular: "g",
     plural: "g",
-    magnitude: 3,
+    magnitude: 0,
   });
 }
 

@@ -9,14 +9,6 @@
   },
   {
     "kind": "thing",
-    "name": "Apple iPhone 13 blka",
-    "co2Eq": "70 kg",
-    "source": [
-      "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
-    ]
-  },
-  {
-    "kind": "thing",
     "name": "Apple MacBook Pro (13-inch)",
     "co2Eq": "185 kg",
     "source": [
@@ -38,5 +30,10 @@
     "source": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
     ]
+  },
+  {
+    "kind": "thing",
+    "name": "Something really green 🌿",
+    "co2Eq": "1 g"
   }
 ]
