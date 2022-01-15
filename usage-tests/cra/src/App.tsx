@@ -5,7 +5,7 @@ import "./App.css";
 
 const App = () => {
   const [queryString, setQueryString] = useState("");
-  const results = useMemo(() => howMuch(queryString), [queryString]);
+  const results = howMuch(queryString);
 
   return (
     <AppContainer>
