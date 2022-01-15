@@ -4,7 +4,8 @@ import { Co2Eq } from "./Co2Eq";
 import { HowMuchResult } from "./HowMuchResult";
 import { fromClassCodec } from "./io-ts";
 
-export class Thing   {
+export class Thing {
+  kind = "thing";
   co2Eq;
   keywords;
   name;
@@ -19,6 +20,15 @@ export class Thing   {
 
   static build(props: ThingProps) {
     return new Thing(props);
+  }
+
+  static factory({
+    name = "aThing",
+    source = ["aSource"],
+    co2Eq = Co2Eq.factory(),
+    keywords = [],
+  }: Partial<ThingProps> = {}) {
+    return Thing.build({ name, source, co2Eq, keywords });
   }
 
   static propsCodec = Codec.sum("kind")({
