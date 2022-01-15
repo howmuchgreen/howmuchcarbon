@@ -22,10 +22,5 @@
     "name": "Apple MacBook Air (13-inch)",
     "co2Eq": "161kg",
     "source": "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
-  },
-  {
-    "kind": "trip",
-    "name": "Paris to New York",
-    "co2Eq": "1,1 ton"
   }
 ]
