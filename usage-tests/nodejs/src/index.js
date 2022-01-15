@@ -1,4 +1,4 @@
 const { howMuch } = require("howmuchcarbon");
 const fs = require("fs");
 
-console.log(howMuch("hello"));
+console.log(howMuch("iPad"));
