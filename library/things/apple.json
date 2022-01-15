@@ -3,24 +3,40 @@
     "kind": "thing",
     "name": "Apple iPhone 12",
     "co2Eq": "70 kg",
-    "source": "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
+    "source": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Apple iPhone 13 blka",
+    "co2Eq": "70 kg",
+    "source": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
+    ]
   },
   {
     "kind": "thing",
     "name": "Apple MacBook Pro (13-inch)",
     "co2Eq": "185 kg",
-    "source": "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf"
+    "source": [
+      "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf"
+    ]
   },
   {
     "kind": "thing",
     "name": "Apple MacBook Pro (14-inch)",
     "co2Eq": "271kg",
-    "source": "https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf"
+    "source": [
+      "https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf"
+    ]
   },
   {
     "kind": "thing",
     "name": "Apple MacBook Air (13-inch)",
     "co2Eq": "161kg",
-    "source": "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
+    "source": [
+      "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
+    ]
   }
 ]

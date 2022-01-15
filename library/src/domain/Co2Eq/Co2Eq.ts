@@ -1,8 +1,8 @@
-import * as Either from "fp-ts/lib/Either";
-import { pipe } from "fp-ts/lib/function";
-import * as Codec from "io-ts/lib/Codec";
-import * as Decoder from "io-ts/lib/Decoder";
-import { Co2EqUnit, Co2EqUnitEnum } from "./Co2EqUnit";
+import * as Either from "fp-ts/es6/Either";
+import { pipe } from "fp-ts/es6/function";
+import * as Codec from "io-ts/es6/Codec";
+import * as Decoder from "io-ts/es6/Decoder";
+import { Co2EqUnit } from "./Co2EqUnit";
 
 export class Co2Eq {
   averageInGrams;
@@ -11,20 +11,23 @@ export class Co2Eq {
     this.averageInGrams = convertToGrams(averageValue, unit);
   }
 
-  format(co2EqUnit?: Co2EqUnitEnum) {
+  format(co2EqUnit?: Co2EqUnit) {
     const unit = co2EqUnit
       ? co2EqUnit
       : findBestUnitForAmountInGrams(this.averageInGrams);
 
     switch (unit) {
-      case Co2EqUnitEnum.KILOGRAM:
+      case Co2EqUnit.KILOGRAM:
         return `${this.averageInGrams / 1e3} kg`;
 
-      case Co2EqUnitEnum.TON:
+      case Co2EqUnit.TON:
         return `${this.averageInGrams / 1e6} ton`;
 
-      case Co2EqUnitEnum.GRAM:
+      case Co2EqUnit.GRAM:
         return `${this.averageInGrams} g`;
+      
+      default:
+        throw new Error("This should not happen")
     }
   }
 
@@ -34,7 +37,7 @@ export class Co2Eq {
 
   static factory({
     averageValue = 100 * 1000,
-    unit = Co2EqUnitEnum.KILOGRAM,
+    unit = Co2EqUnit.KILOGRAM,
   }: Partial<Co2EqProps> = {}) {
     return Co2Eq.build({ averageValue, unit });
   }
@@ -85,27 +88,30 @@ export const findBestUnitForAmountInGrams = (amountInGrams: number) => {
     Math.log(amountInGrams) / Math.LN10 + 0.000000001
   );
   if (orderOfMagnitude < 3) {
-    return Co2EqUnitEnum.GRAM;
+    return Co2EqUnit.GRAM;
   } else if (orderOfMagnitude < 6) {
-    return Co2EqUnitEnum.KILOGRAM;
+    return Co2EqUnit.KILOGRAM;
   } else {
-    return Co2EqUnitEnum.TON;
+    return Co2EqUnit.TON;
   }
 };
 
-const convertToGrams = (value: number, unit: Co2EqUnitEnum) => {
+const convertToGrams = (value: number, unit: Co2EqUnit) => {
   return value * multiplicationFactor(unit);
 };
 
-const multiplicationFactor = (unit: Co2EqUnitEnum) => {
+const multiplicationFactor = (unit: Co2EqUnit) => {
   switch (unit) {
-    case Co2EqUnitEnum.KILOGRAM:
+    case Co2EqUnit.KILOGRAM:
       return 1e3;
 
-    case Co2EqUnitEnum.TON:
+    case Co2EqUnit.TON:
       return 1e6;
 
-    case Co2EqUnitEnum.GRAM:
+    case Co2EqUnit.GRAM:
       return 1;
+
+    default:
+      throw new Error("This should never happen")
   }
 };

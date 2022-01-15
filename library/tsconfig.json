@@ -6,7 +6,7 @@
     "module": "CommonJS",
     "declaration": true,
     "declarationDir": "dist/types",
-    "lib": ["es2017"],
+    "lib": ["es2019"],
     "resolveJsonModule": true,
     "rootDir": ".",
     "sourceMap": true,

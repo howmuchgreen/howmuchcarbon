@@ -1,5 +1,5 @@
 import { howMuch } from "howmuchcarbon";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 
@@ -17,8 +17,8 @@ const App = () => {
               <span>{name}</span>
               <span>
                 <b>
-                  {source ? (
-                    <a href={source}>{co2Eq.format()}</a>
+                  {source && source[0] ? (
+                    <a href={source[0]}>{co2Eq.format()}</a>
                   ) : (
                     co2Eq.format()
                   )}

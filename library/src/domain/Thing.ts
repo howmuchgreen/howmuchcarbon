@@ -1,12 +1,10 @@
+import { pipe } from "fp-ts/es6/function";
+import * as Codec from "io-ts/es6/Codec";
 import { Co2Eq } from "./Co2Eq";
 import { HowMuchResult } from "./HowMuchResult";
-import { Kind } from "./Kind";
-import * as Codec from "io-ts/lib/Codec";
-import { fromClassCodec, fromEnumCodec } from "./io-ts";
-import { pipe } from "fp-ts/lib/function";
+import { fromClassCodec } from "./io-ts";
 
-export class Thing implements HowMuchResult {
-  kind = Kind.THING;
+export class Thing   {
   co2Eq;
   keywords;
   name;
@@ -22,20 +20,21 @@ export class Thing implements HowMuchResult {
   static build(props: ThingProps) {
     return new Thing(props);
   }
-  
-  static propsCodec = pipe(
-    Codec.struct({
-      kind: fromEnumCodec("Kind", Kind),
-      name: Codec.string,
-      co2Eq: Co2Eq.stringCodec,
-    }),
-    Codec.intersect(
-      Codec.partial({
-        keywords: Codec.array(Codec.string),
-        source: Codec.string,
-      })
-    )
-  );
+
+  static propsCodec = Codec.sum("kind")({
+    thing: pipe(
+      Codec.struct({
+        name: Codec.string,
+        co2Eq: Co2Eq.stringCodec,
+      }),
+      Codec.intersect(
+        Codec.partial({
+          keywords: Codec.array(Codec.string),
+          source: Codec.array(Codec.string),
+        })
+      )
+    ),
+  });
 
   static codec = pipe(this.propsCodec, Codec.compose(fromClassCodec(Thing)));
 }

@@ -1,5 +1,5 @@
-import * as Codec from "io-ts/lib/Codec";
-import * as Decoder from "io-ts/lib/Decoder";
+import * as Codec from "io-ts/es6/Codec";
+import * as Decoder from "io-ts/es6/Decoder";
 
 export const fromClassCodec = <S, T extends S>(
   type: new (s: S) => T

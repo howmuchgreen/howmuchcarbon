@@ -1,7 +1,14 @@
 import json from "@rollup/plugin-json";
 import ts from "rollup-plugin-ts";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
-const plugins = [ts(), json({ compact: true })];
+const plugins = [
+  ts(),
+  json({ compact: true }),
+  nodeResolve(),
+  commonjs(),
+];
 
 export default [
   {
