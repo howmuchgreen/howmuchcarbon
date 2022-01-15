@@ -11,14 +11,14 @@ const App = () => {
     <AppContainer>
       <SearchInput onChange={(e) => setQueryString(e.target.value)} />
       <ResultsList>
-        {results.results.map(({ name, co2Eq, source }, i) => {
+        {results.results.map(({ name, co2Eq, sources }, i) => {
           return (
             <ResultsListElement key={i}>
               <span>{name}</span>
               <span>
                 <b>
-                  {source && source[0] ? (
-                    <a href={source[0]}>{co2Eq.format()}</a>
+                  {sources && sources[0] ? (
+                    <a href={sources[0]}>{co2Eq.format()}</a>
                   ) : (
                     co2Eq.format()
                   )}

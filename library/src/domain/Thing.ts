@@ -1,21 +1,21 @@
 import { pipe } from "fp-ts/function";
 import * as Codec from "io-ts/Codec";
 import { Co2Eq } from "./Co2Eq";
-import { HowMuchResult } from "./HowMuchResult";
 import { fromClassCodec } from "./io-ts";
 
 export class Thing {
-  kind = "thing";
+  kind;
   co2Eq;
   keywords;
   name;
-  source;
+  sources;
 
   constructor(props: ThingProps) {
+    this.kind = props.kind;
     this.co2Eq = props.co2Eq;
     this.keywords = props.keywords;
     this.name = props.name;
-    this.source = props.source;
+    this.sources = props.sources;
   }
 
   static build(props: ThingProps) {
@@ -24,27 +24,22 @@ export class Thing {
 
   static factory({
     name = "aThing",
-    source = ["aSource"],
+    sources = ["aSource"],
     co2Eq = Co2Eq.factory(),
     keywords = [],
   }: Partial<ThingProps> = {}) {
-    return Thing.build({ name, source, co2Eq, keywords });
+    return Thing.build({ kind: "thing", name, sources, co2Eq, keywords });
   }
 
-  static propsCodec = Codec.sum("kind")({
-    thing: pipe(
-      Codec.struct({
-        name: Codec.string,
-        co2Eq: Co2Eq.stringCodec,
-      }),
-      Codec.intersect(
-        Codec.partial({
-          keywords: Codec.array(Codec.string),
-          source: Codec.array(Codec.string),
-        })
-      )
-    ),
-  });
+  static propsCodec = pipe(
+    Codec.struct({
+      kind: Codec.literal("thing"),
+      name: Codec.string,
+      co2Eq: Co2Eq.stringCodec,
+      keywords: Codec.array(Codec.string),
+      sources: Codec.array(Codec.string),
+    })
+  );
 
   static codec = pipe(this.propsCodec, Codec.compose(fromClassCodec(Thing)));
 }

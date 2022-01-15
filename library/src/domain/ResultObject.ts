@@ -1,4 +1,7 @@
 import { HowMuchResult } from "./HowMuchResult";
+import { fromClassCodec } from "./io-ts";
+import * as Codec from "io-ts/Codec";
+import { pipe } from "fp-ts/function";
 
 export class ResultObject {
   results;
@@ -22,8 +25,17 @@ export class ResultObject {
   static fromResults(results: Extract<ResultObjectProps, "results">) {
     return this.build({ results });
   }
+
+  static propsCodec = pipe(
+    Codec.struct({
+      results: Codec.array(HowMuchResult.codec),
+    })
+  );
+
+  static codec = pipe(
+    this.propsCodec,
+    Codec.compose(fromClassCodec(ResultObject))
+  );
 }
 
-type ResultObjectProps = {
-  results: HowMuchResult[];
-};
+type ResultObjectProps = Codec.TypeOf<typeof ResultObject.propsCodec>;
