@@ -49,7 +49,7 @@ export class Co2Eq {
       Decoder.string,
       Decoder.compose({
         decode: (string) => {
-          const REGEX = /^([0-9]*,?\.?[0-9]*) *(g|kg|ton)$/;
+          const REGEX = /^([0-9]*\.?[0-9]*) *(g|kg|ton)$/;
           const regexArray = REGEX.exec(string.replace(/,/, "."));
           if (!regexArray) {
             return Decoder.failure(string, `matching regex ${REGEX.source}`);
