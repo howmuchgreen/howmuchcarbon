@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "target": "ES6",
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "lib": ["es2019"],
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "noEmit": false,
+    "outDir": "out-tsc",
+    "strict": true
+  },
+  "include": ["./src/**/*.ts"]
+}
