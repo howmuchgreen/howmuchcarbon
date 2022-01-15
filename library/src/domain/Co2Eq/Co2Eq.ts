@@ -21,7 +21,7 @@ export class Co2Eq {
         return `${this.averageInGrams / 1e3} kg`;
 
       case Co2EqUnitEnum.TON:
-        return `${this.averageInGrams / 1e6} tons`;
+        return `${this.averageInGrams / 1e6} ton`;
 
       case Co2EqUnitEnum.GRAM:
         return `${this.averageInGrams} g`;
