@@ -1,5 +1,5 @@
-import { pipe } from "fp-ts/es6/function";
-import * as Codec from "io-ts/es6/Codec";
+import { pipe } from "fp-ts/function";
+import * as Codec from "io-ts/Codec";
 import { Co2Eq } from "./Co2Eq";
 import { HowMuchResult } from "./HowMuchResult";
 import { fromClassCodec } from "./io-ts";

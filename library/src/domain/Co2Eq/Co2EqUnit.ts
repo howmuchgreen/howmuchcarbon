@@ -1,6 +1,6 @@
-import { pipe } from "fp-ts/es6/function";
-import * as Codec from "io-ts/es6/Codec";
-import { failure, success } from "io-ts/es6/Decoder";
+import { pipe } from "fp-ts/function";
+import * as Codec from "io-ts/Codec";
+import { failure, success } from "io-ts/Decoder";
 
 const textToUnit = (text: string) =>
   pipe(

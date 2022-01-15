@@ -1,7 +1,7 @@
-import * as Either from "fp-ts/es6/Either";
-import { pipe } from "fp-ts/es6/function";
-import * as Codec from "io-ts/es6/Codec";
-import * as Decoder from "io-ts/es6/Decoder";
+import * as Either from "fp-ts/Either";
+import { pipe } from "fp-ts/function";
+import * as Codec from "io-ts/Codec";
+import * as Decoder from "io-ts/Decoder";
 import { Co2EqUnit } from "./Co2EqUnit";
 
 export class Co2Eq {

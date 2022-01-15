@@ -1,6 +1,6 @@
-import { isLeft } from "fp-ts/es6/Either";
-import * as Codec from "io-ts/es6/Codec";
-import { draw } from "io-ts/es6/Decoder";
+import { isLeft } from "fp-ts/Either";
+import * as Codec from "io-ts/Codec";
+import { draw } from "io-ts/Decoder";
 import { matchSorter } from "match-sorter";
 import apple from "../things/things.json";
 import { ResultObject, Thing } from "./domain";
