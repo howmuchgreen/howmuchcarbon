@@ -1,4 +1,4 @@
-const { howMuch } = require("howmuchcarbon");
+const { howMuch } = require("@howmuchgreen/howmuchcarbon");
 
 describe("howMuch()", () => {
   it("should return some results when searching for iPad", () => {

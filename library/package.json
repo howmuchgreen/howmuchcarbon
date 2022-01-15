@@ -1,5 +1,5 @@
 {
-  "name": "howmuchcarbon",
+  "name": "@howmuchgreen/howmuchcarbon",
   "version": "0.1.0",
   "description": "",
   "module": "dist/esm/bundle.js",

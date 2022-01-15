@@ -1,4 +1,4 @@
-# Node.JS usage test project for howmuchcarbon
+# Node.JS usage test project for @howmuchgreen/howmuchcarbon
 
 This project's goal is to be an example of how to use `howmuchcarbon` in Node.JS, as well as to run integration tests of the library in Node.JS.
 

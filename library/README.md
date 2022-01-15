@@ -1,4 +1,4 @@
-# howmuchcarbon
+# @howmuchgreen/howmuchcarbon
 
 ## Dev setup
 ```bash

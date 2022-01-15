@@ -1,4 +1,4 @@
-import { howMuch } from "howmuchcarbon";
+import { howMuch } from "@howmuchgreen/howmuchcarbon";
 import { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
