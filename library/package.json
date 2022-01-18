@@ -1,6 +1,6 @@
 {
   "name": "@howmuchgreen/howmuchcarbon",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "",
   "module": "dist/esm/bundle.js",
   "main": "dist/cjs/bundle.js",
@@ -9,6 +9,7 @@
     "dev": "npm run rollup -- --watch",
     "build": "tsc -b",
     "rollup": "rollup -c rollup.config.js",
+    "prepare": "npm rollup",
     "test": "jest"
   },
   "repository": {
