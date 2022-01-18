@@ -9,7 +9,7 @@
     "dev": "npm run rollup -- --watch",
     "build": "tsc -b",
     "rollup": "rollup -c rollup.config.js",
-    "prepare": "npm rollup",
+    "prepare": "npm run rollup",
     "test": "jest"
   },
   "repository": {
