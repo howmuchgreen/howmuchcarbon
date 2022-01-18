@@ -3,7 +3,6 @@
     "kind": "thing",
     "name": "iPhone 12",
     "co2Eq": "70 kg",
-    "keywords": [],
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
     ],
@@ -13,7 +12,7 @@
     "kind": "thing",
     "name": "iPhone 13",
     "co2Eq": "64 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -22,7 +21,7 @@
     "kind": "thing",
     "name": "iPhone 13 mini",
     "co2Eq": "61 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -31,7 +30,7 @@
     "kind": "thing",
     "name": "iPhone 13 mini",
     "co2Eq": "61 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -40,7 +39,7 @@
     "kind": "thing",
     "name": "iPhone 13 Pro",
     "co2Eq": "69 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -49,7 +48,7 @@
     "kind": "thing",
     "name": "iPhone 13 Pro Max",
     "co2Eq": "74 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_Max_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -58,7 +57,7 @@
     "kind": "thing",
     "name": "iPad 2021",
     "co2Eq": "75 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPad_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -67,7 +66,7 @@
     "kind": "thing",
     "name": "iPad Pro 11' 2021",
     "co2Eq": "99 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPadPro_11-inch_PER_Apr2021.pdf"
     ],
     "keywords": ["apple"]
@@ -76,7 +75,7 @@
     "kind": "thing",
     "name": "iPad Pro 12.9' 2020",
     "co2Eq": "140 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPadPro_12.9-inch_PER_Mar2020.pdf"
     ],
     "keywords": ["apple"]
@@ -85,7 +84,7 @@
     "kind": "thing",
     "name": "Apple Watch Series 6",
     "co2Eq": "36 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf"
     ],
     "keywords": ["apple"]
@@ -94,7 +93,7 @@
     "kind": "thing",
     "name": "Apple Watch Series 6",
     "co2Eq": "34 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -103,7 +102,6 @@
     "kind": "thing",
     "name": "MacBook Pro 13' 2020",
     "co2Eq": "185 kg",
-    "keywords": [],
     "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf"
     ],
@@ -111,32 +109,18 @@
   },
   {
     "kind": "thing",
-<<<<<<< HEAD
-    "name": "Apple MacBook Pro (14-inch)",
-    "co2Eq": "271kg",
-    "keywords": [],
-    "sources": [
-=======
     "name": "MacBook Pro 14' 2021",
     "co2Eq": "271 kg",
-    "source": [
->>>>>>> main
+    "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf"
     ],
     "keywords": ["apple"]
   },
   {
     "kind": "thing",
-<<<<<<< HEAD
-    "name": "Apple MacBook Air (13-inch)",
-    "co2Eq": "161kg",
-    "keywords": [],
-    "sources": [
-=======
     "name": "MacBook Air 13' 2020",
     "co2Eq": "161 kg",
-    "source": [
->>>>>>> main
+    "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
     ],
     "keywords": ["apple"]
@@ -145,7 +129,7 @@
     "kind": "thing",
     "name": "iMac 24' 2021",
     "co2Eq": "481 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/desktops/24-inch_iMac_PER_Apr2021.pdf"
     ],
     "keywords": ["apple"]
@@ -154,7 +138,7 @@
     "kind": "thing",
     "name": "Kindle",
     "co2Eq": "168 kg",
-    "source": [
+    "sources": [
       "https://gato-docs.its.txstate.edu/jcr:4646e321-9a29-41e5-880d-4c5ffe69e03e/thoughts_ereaders.pdf"
     ],
     "keywords": ["amazon"]
@@ -163,21 +147,17 @@
     "kind": "thing",
     "name": "Beef (100g)",
     "co2Eq": "6 kg",
-    "source": [
+    "keywords": [],
+    "sources": [
       "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
     ]
   },
   {
     "kind": "thing",
-<<<<<<< HEAD
-    "name": "Something really green 🌿",
-    "co2Eq": "1 g",
-    "keywords": [],
-    "sources": []
-=======
     "name": "Chicken (100g)",
     "co2Eq": "1 kg",
-    "source": [
+    "keywords": [],
+    "sources": [
       "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
     ]
   },
@@ -185,9 +165,9 @@
     "kind": "thing",
     "name": "Jean",
     "co2Eq": "20 kg",
-    "source": [
+    "keywords": [],
+    "sources": [
       "https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets"
     ]
->>>>>>> main
   }
 ]
