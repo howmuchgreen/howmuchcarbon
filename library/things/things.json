@@ -91,7 +91,7 @@
   },
   {
     "kind": "thing",
-    "name": "Apple Watch Series 6",
+    "name": "Apple Watch Series 7",
     "co2Eq": "34 kg",
     "source": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf"
@@ -136,6 +136,24 @@
   },
   {
     "kind": "thing",
+    "name": "Mac Pro (2019)",
+    "co2Eq": "2765 kg",
+    "source": [
+      "https://www.apple.com/environment/pdf/products/desktops/Mac_Pro_PER_Dec2019.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "Pro Display XDR",
+    "co2Eq": "974 kg",
+    "source": [
+      "https://www.apple.com/environment/pdf/products/desktops/Pro_Display_XDR_PER_Dec2019.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
     "name": "Kindle",
     "co2Eq": "168 kg",
     "source": [
@@ -165,6 +183,108 @@
     "co2Eq": "20 kg",
     "source": [
       "https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Sneakers",
+    "co2Eq": "14 kg",
+    "source": [
+      "https://dspace.mit.edu/bitstream/handle/1721.1/102070/Olivetti_Manufacturing-focused.pdf?sequence=1&isAllowed=y"
+    ],
+    "keywords": ["shoes", "baskets", "footwear"]
+  },
+  {
+    "kind": "thing",
+    "name": "Pixel 5a",
+    "co2Eq": "60 kg",
+    "source": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-5a-with-5g-product-environmental-report.pdf"
+    ],
+    "keywords": ["google"]
+  },
+  {
+    "kind": "thing",
+    "name": "Pixel 6",
+    "co2Eq": "85 kg",
+    "source": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-6-product-environmental-report.pdf"
+    ],
+    "keywords": ["google"]
+  },
+  {
+    "kind": "thing",
+    "name": "Pixel 5a",
+    "co2Eq": "60 kg",
+    "source": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-5a-with-5g-product-environmental-report.pdf"
+    ],
+    "keywords": ["google"]
+  },
+  {
+    "kind": "thing",
+    "name": "Pixel 6 Pro",
+    "co2Eq": "95 kg",
+    "source": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-6-pro-product-environmental-report.pdf"
+    ],
+    "keywords": ["google"]
+  },
+  {
+    "kind": "thing",
+    "name": "Pixel 5",
+    "co2Eq": "85 kg",
+    "source": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel5-product-environmental-report.pdf"
+    ],
+    "keywords": ["google"]
+  },
+  {
+    "kind": "thing",
+    "name": "Burger (beef)",
+    "co2Eq": "12 kg",
+    "source": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Burger (chicken)",
+    "co2Eq": "2 kg",
+    "source": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Burger (vegetarian)",
+    "co2Eq": "1 kg",
+    "source": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Having a kid",
+    "co2Eq": "59 ton",
+    "source": [
+      "https://www.theguardian.com/environment/2017/jul/12/want-to-fight-climate-change-have-fewer-children"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Having a dog",
+    "co2Eq": "770 kg",
+    "source": [
+      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Having a cat",
+    "co2Eq": "310 kg",
+    "source": [
+      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
     ]
   }
 ]
