@@ -169,5 +169,14 @@
     "sources": [
       "https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets"
     ]
+  },
+  {
+    "kind": "thing",
+    "name": "Paperback book",
+    "co2Eq": "2.7 kg",
+    "keywords": ["book", "paper"],
+    "sources": [
+      "https://www.researchgate.net/profile/Achille-B-Laurent/publication/255699164_Carbon_Footprint_Assessment_of_a_Paperback_Book/links/5a004010a6fdcc93611d83f9/Carbon-Footprint-Assessment-of-a-Paperback-Book.pdf"
+    ]
   }
 ]
