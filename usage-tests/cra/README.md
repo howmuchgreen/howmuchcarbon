@@ -1,4 +1,4 @@
-# CRA usage-test of howmuchcarbon
+# CRA usage-test of @howmuchgreen/howmuchcarbon
 
 original [CRA README.md](./README-CRA.md)
 
@@ -8,4 +8,4 @@ npm start
 ```
 
 ## Known issues
-- Enums imported via symlinked `howmuchcarbon` may be an issue. CRA does not support monorepos. This issue should not happen with the published library.
+- Enums imported via symlinked `@howmuchgreen/howmuchcarbon` may be an issue. CRA does not support monorepos. This issue should not happen with the published library.

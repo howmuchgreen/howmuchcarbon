@@ -1,7 +1,7 @@
-const { howMuch } = require("howmuchcarbon");
+const { howMuch } = require("@howmuchgreen/howmuchcarbon");
 
 describe("howMuch()", () => {
   it("should return some results when searching for iPad", () => {
-    expect(howMuch("ipad").numResults).toBeGreaterThan(0);
+    expect(howMuch("iphone").numResults).toBeGreaterThan(0);
   });
 });
