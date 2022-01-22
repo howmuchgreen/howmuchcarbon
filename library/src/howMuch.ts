@@ -15,6 +15,6 @@ if (isLeft(things)) {
 
 export const howMuch = (query: string): ResultObject => {
   return ResultObject.build({
-    results: matchSorter(things.right, query, {keys: ['name']}),
+    results: matchSorter(things.right, query, { keys: ["name", "keywords"] }),
   });
 };
