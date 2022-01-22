@@ -3,7 +3,7 @@
     "kind": "thing",
     "name": "iPhone 12",
     "co2Eq": "70 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
     ],
     "keywords": ["apple"]
@@ -12,7 +12,7 @@
     "kind": "thing",
     "name": "iPhone 13",
     "co2Eq": "64 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -21,7 +21,7 @@
     "kind": "thing",
     "name": "iPhone 13 mini",
     "co2Eq": "61 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -30,7 +30,7 @@
     "kind": "thing",
     "name": "iPhone 13 mini",
     "co2Eq": "61 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -39,7 +39,7 @@
     "kind": "thing",
     "name": "iPhone 13 Pro",
     "co2Eq": "69 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -48,7 +48,7 @@
     "kind": "thing",
     "name": "iPhone 13 Pro Max",
     "co2Eq": "74 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_Max_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -57,7 +57,7 @@
     "kind": "thing",
     "name": "iPad 2021",
     "co2Eq": "75 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPad_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -66,7 +66,7 @@
     "kind": "thing",
     "name": "iPad Pro 11' 2021",
     "co2Eq": "99 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPadPro_11-inch_PER_Apr2021.pdf"
     ],
     "keywords": ["apple"]
@@ -75,7 +75,7 @@
     "kind": "thing",
     "name": "iPad Pro 12.9' 2020",
     "co2Eq": "140 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPadPro_12.9-inch_PER_Mar2020.pdf"
     ],
     "keywords": ["apple"]
@@ -84,16 +84,16 @@
     "kind": "thing",
     "name": "Apple Watch Series 6",
     "co2Eq": "36 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf"
     ],
     "keywords": ["apple"]
   },
   {
     "kind": "thing",
-    "name": "Apple Watch Series 7",
+    "name": "Apple Watch Series 6",
     "co2Eq": "34 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf"
     ],
     "keywords": ["apple"]
@@ -102,7 +102,7 @@
     "kind": "thing",
     "name": "MacBook Pro 13' 2020",
     "co2Eq": "185 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf"
     ],
     "keywords": ["apple"]
@@ -111,7 +111,7 @@
     "kind": "thing",
     "name": "MacBook Pro 14' 2021",
     "co2Eq": "271 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf"
     ],
     "keywords": ["apple"]
@@ -120,7 +120,7 @@
     "kind": "thing",
     "name": "MacBook Air 13' 2020",
     "co2Eq": "161 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
     ],
     "keywords": ["apple"]
@@ -129,26 +129,8 @@
     "kind": "thing",
     "name": "iMac 24' 2021",
     "co2Eq": "481 kg",
-    "source": [
+    "sources": [
       "https://www.apple.com/environment/pdf/products/desktops/24-inch_iMac_PER_Apr2021.pdf"
-    ],
-    "keywords": ["apple"]
-  },
-  {
-    "kind": "thing",
-    "name": "Mac Pro (2019)",
-    "co2Eq": "2765 kg",
-    "source": [
-      "https://www.apple.com/environment/pdf/products/desktops/Mac_Pro_PER_Dec2019.pdf"
-    ],
-    "keywords": ["apple"]
-  },
-  {
-    "kind": "thing",
-    "name": "Pro Display XDR",
-    "co2Eq": "974 kg",
-    "source": [
-      "https://www.apple.com/environment/pdf/products/desktops/Pro_Display_XDR_PER_Dec2019.pdf"
     ],
     "keywords": ["apple"]
   },
@@ -156,7 +138,7 @@
     "kind": "thing",
     "name": "Kindle",
     "co2Eq": "168 kg",
-    "source": [
+    "sources": [
       "https://gato-docs.its.txstate.edu/jcr:4646e321-9a29-41e5-880d-4c5ffe69e03e/thoughts_ereaders.pdf"
     ],
     "keywords": ["amazon"]
@@ -165,7 +147,8 @@
     "kind": "thing",
     "name": "Beef (100g)",
     "co2Eq": "6 kg",
-    "source": [
+    "keywords": [],
+    "sources": [
       "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
     ]
   },
@@ -173,7 +156,8 @@
     "kind": "thing",
     "name": "Chicken (100g)",
     "co2Eq": "1 kg",
-    "source": [
+    "keywords": [],
+    "sources": [
       "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
     ]
   },
@@ -181,110 +165,9 @@
     "kind": "thing",
     "name": "Jean",
     "co2Eq": "20 kg",
-    "source": [
+    "keywords": [],
+    "sources": [
       "https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets"
-    ]
-  },
-  {
-    "kind": "thing",
-    "name": "Sneakers",
-    "co2Eq": "14 kg",
-    "source": [
-      "https://dspace.mit.edu/bitstream/handle/1721.1/102070/Olivetti_Manufacturing-focused.pdf?sequence=1&isAllowed=y"
-    ],
-    "keywords": ["shoes", "baskets", "footwear"]
-  },
-  {
-    "kind": "thing",
-    "name": "Pixel 5a",
-    "co2Eq": "60 kg",
-    "source": [
-      "https://www.gstatic.com/gumdrop/sustainability/pixel-5a-with-5g-product-environmental-report.pdf"
-    ],
-    "keywords": ["google"]
-  },
-  {
-    "kind": "thing",
-    "name": "Pixel 6",
-    "co2Eq": "85 kg",
-    "source": [
-      "https://www.gstatic.com/gumdrop/sustainability/pixel-6-product-environmental-report.pdf"
-    ],
-    "keywords": ["google"]
-  },
-  {
-    "kind": "thing",
-    "name": "Pixel 5a",
-    "co2Eq": "60 kg",
-    "source": [
-      "https://www.gstatic.com/gumdrop/sustainability/pixel-5a-with-5g-product-environmental-report.pdf"
-    ],
-    "keywords": ["google"]
-  },
-  {
-    "kind": "thing",
-    "name": "Pixel 6 Pro",
-    "co2Eq": "95 kg",
-    "source": [
-      "https://www.gstatic.com/gumdrop/sustainability/pixel-6-pro-product-environmental-report.pdf"
-    ],
-    "keywords": ["google"]
-  },
-  {
-    "kind": "thing",
-    "name": "Pixel 5",
-    "co2Eq": "85 kg",
-    "source": [
-      "https://www.gstatic.com/gumdrop/sustainability/pixel5-product-environmental-report.pdf"
-    ],
-    "keywords": ["google"]
-  },
-  {
-    "kind": "thing",
-    "name": "Burger (beef)",
-    "co2Eq": "12 kg",
-    "source": [
-      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
-    ]
-  },
-  {
-    "kind": "thing",
-    "name": "Burger (chicken)",
-    "co2Eq": "2 kg",
-    "source": [
-      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
-    ]
-  },
-  {
-    "kind": "thing",
-    "name": "Burger (vegetarian)",
-    "co2Eq": "1 kg",
-    "source": [
-      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
-    ]
-  },
-  {
-    "kind": "thing",
-    "name": "Having a kid",
-    "co2Eq": "59 ton",
-    "source": [
-      "https://www.theguardian.com/environment/2017/jul/12/want-to-fight-climate-change-have-fewer-children"
-    ]
-  },
-  {
-    "kind": "thing",
-    "name": "Having a dog",
-    "co2Eq": "770 kg",
-    "source": [
-      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
-    ]
-  },
-  {
-    "kind": "thing",
-    "name": "Having a cat",
-    "co2Eq": "310 kg",
-    "source": [
-      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
     ]
   }
 ]

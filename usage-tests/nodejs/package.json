@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "howmuchcarbon": "file:../../library"
+    "@howmuchgreen/howmuchcarbon": "file:../../library"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",

@@ -1,4 +1,4 @@
-import * as Codec from "io-ts/es6/Codec";
+import * as Codec from "io-ts/Codec";
 
 export namespace Kind {
   export const codec = Codec.literal("thing", "trip");
