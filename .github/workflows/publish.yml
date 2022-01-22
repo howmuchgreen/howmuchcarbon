@@ -1,0 +1,29 @@
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: library
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bahmutov/npm-install@v1
+        with:
+          working-directory: library
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          working_directory: library
+          branches: |
+            [
+              'main', 
+            ]
+    env:
+      GITHUB_TOKEN: ${{ secrets.HOWMUCHBOT_GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.HOWMUCHBOT_NPM_TOKEN }}
