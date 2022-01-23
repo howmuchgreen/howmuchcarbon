@@ -1,0 +1,23 @@
+---
+label: Things
+hide_body: true
+fields:
+- type: field_group_list
+  name: Things
+  label: Things
+  fields:
+  - type: text
+    name: kind
+    label: kind
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: co2Eq
+    label: co2Eq
+  - type: image_gallery
+    name: sources
+    label: sources
+  - type: list
+    name: keywords
+    label: keywords
