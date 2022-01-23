@@ -1,6 +1,7 @@
 # @howmuchgreen/howmuchcarbon
 
 ## Dev setup
+
 ```bash
 # Install dependencies
 npm install
@@ -8,9 +9,9 @@ npm install
 # Run tests
 npm run test
 
-# Run tests in watch mode 
+# Run tests in watch mode
 npm run test -- --watch
- 
+
 # Build in watch mode (runs tsc -b)
 npm run build -- --watch
 
@@ -25,10 +26,13 @@ npm run dev
 ```
 
 # How to use this library
+
 ## With Node.JS (CommonJS bundle)
+
 You can test how to use this library by looking at [the nodeJS usage-test project](../usage-tests/nodejs/README.md).
 
 # Publish the library
+
 ```bash
-npx np --any-branch --no-2fa 
+npx np --any-branch --no-2fa
 ```
