@@ -1,5 +1,111 @@
 [
   {
+    "name": "Sneakers",
+    "co2Eq": "14 kg",
+    "keywords": [
+      "shoes",
+      "baskets",
+      "footwear"
+    ],
+    "sources": [
+      "https://dspace.mit.edu/bitstream/handle/1721.1/102070/Olivetti_Manufacturing-focused.pdf?sequence=1&isAllowed=y"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Pixel 6",
+    "co2Eq": "85 kg",
+    "keywords": [
+      "google",
+      "smartphone"
+    ],
+    "sources": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-6-product-environmental-report.pdf"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Pixel 5a",
+    "co2Eq": "60 kg",
+    "keywords": [
+      "google",
+      "smartphone"
+    ],
+    "sources": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-5a-with-5g-product-environmental-report.pdf"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Pixel 5",
+    "co2Eq": "85 kg",
+    "keywords": [
+      "smartphone",
+      "google"
+    ],
+    "sources": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel5-product-environmental-report.pdf"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Burger (beef)",
+    "co2Eq": "12 kg",
+    "keywords": [
+      "food",
+      "meat"
+    ],
+    "sources": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Burger (chicken)",
+    "co2Eq": "2 kg",
+    "keywords": [
+      "food"
+    ],
+    "sources": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Burger (vegetarian)",
+    "co2Eq": "1 kg",
+    "keywords": [
+      "food"
+    ],
+    "sources": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Having a kid",
+    "co2Eq": "59 ton",
+    "keywords": [
+
+    ],
+    "sources": [
+      "https://www.theguardian.com/environment/2017/jul/12/want-to-fight-climate-change-have-fewer-children"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Having a dog",
+    "co2Eq": "770 kg",
+    "keywords": [
+      "pet",
+      "animal"
+    ],
+    "sources": [
+      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
+    ],
+    "kind": "thing"
+  },
+  {
     "name": "Having a cat",
     "co2Eq": "310 kg",
     "keywords": [
