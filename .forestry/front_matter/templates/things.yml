@@ -17,12 +17,17 @@ fields:
   - type: text
     name: co2Eq
     label: co2Eq
-  - type: image_gallery
-    name: sources
-    label: sources
-  - type: list
-    name: keywords
+  - name: keywords
+    type: tag_list
+    default: []
     label: keywords
+  - name: sources
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: sources
   config:
     labelField: name
 pages:
