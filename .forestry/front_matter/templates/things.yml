@@ -12,6 +12,8 @@ fields:
   - type: text
     name: kind
     label: kind
+    hidden: true
+    default: thing
   - type: text
     name: co2Eq
     label: co2Eq
