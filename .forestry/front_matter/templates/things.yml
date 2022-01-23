@@ -10,11 +10,6 @@ fields:
     name: name
     label: name
   - type: text
-    name: kind
-    label: kind
-    hidden: true
-    default: thing
-  - type: text
     name: co2Eq
     label: co2Eq
   - name: keywords
@@ -28,6 +23,20 @@ fields:
       min: 
       max: 
     label: sources
+  - name: kind
+    type: select
+    default: thing
+    config:
+      required: true
+      options:
+      - thing
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: kind
+    hidden: true
   config:
     labelField: name
 pages:
