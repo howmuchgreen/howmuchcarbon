@@ -1,21 +1,21 @@
 kind,name,co2Eq,sources,keywords
-thing,iPhone 13,64 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_PER_Sept2021.pdf,apple,
-thing,iPhone 12,70 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf,apple,
-thing,iPhone 13 mini,61 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf,apple,
-thing,iPhone 13 mini,61 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf,apple,
-thing,iPhone 13 Pro,69 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_PER_Sept2021.pdf,apple,
-thing,iPhone 13 Pro Max,74 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_Max_PER_Sept2021.pdf,apple,
-thing,iPad 2021,75 kg,https://www.apple.com/environment/pdf/products/ipad/iPad_PER_Sept2021.pdf,apple,
-thing,iPad Pro 11' 2021,99 kg,https://www.apple.com/environment/pdf/products/ipad/iPadPro_11-inch_PER_Apr2021.pdf,apple,
-thing,iPad Pro 12.9' 2020,140 kg,https://www.apple.com/environment/pdf/products/ipad/iPadPro_12.9-inch_PER_Mar2020.pdf,apple,
-thing,Apple Watch Series 6,36 kg,https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf,apple,
-thing,Apple Watch Series 6,34 kg,https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf,apple,
-thing,MacBook Pro 13' 2020,185 kg,https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf,apple,
-thing,MacBook Pro 14' 2021,271 kg,https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf,apple,
-thing,MacBook Air 13' 2020,161 kg,https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf,apple,
-thing,iMac 24' 2021,481 kg,https://www.apple.com/environment/pdf/products/desktops/24-inch_iMac_PER_Apr2021.pdf,apple,
-thing,Kindle,168 kg,https://gato-docs.its.txstate.edu/jcr:4646e321-9a29-41e5-880d-4c5ffe69e03e/thoughts_ereaders.pdf,amazon,
-thing,Beef (100g),6 kg,https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability,,
-thing,Chicken (100g),1 kg,https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability,,
-thing,Jean,20 kg,https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets,,
+thing,iPhone 13,64 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_PER_Sept2021.pdf,apple
+thing,iPhone 12,70 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf,apple
+thing,iPhone 13 mini,61 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf,apple
+thing,iPhone 13 mini,61 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf,apple
+thing,iPhone 13 Pro,69 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_PER_Sept2021.pdf,apple
+thing,iPhone 13 Pro Max,74 kg,https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_Max_PER_Sept2021.pdf,apple
+thing,iPad 2021,75 kg,https://www.apple.com/environment/pdf/products/ipad/iPad_PER_Sept2021.pdf,apple
+thing,iPad Pro 11' 2021,99 kg,https://www.apple.com/environment/pdf/products/ipad/iPadPro_11-inch_PER_Apr2021.pdf,apple
+thing,iPad Pro 12.9' 2020,140 kg,https://www.apple.com/environment/pdf/products/ipad/iPadPro_12.9-inch_PER_Mar2020.pdf,apple
+thing,Apple Watch Series 6,36 kg,https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf,apple
+thing,Apple Watch Series 6,34 kg,https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf,apple
+thing,MacBook Pro 13' 2020,185 kg,https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf,apple
+thing,MacBook Pro 14' 2021,271 kg,https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf,apple
+thing,MacBook Air 13' 2020,161 kg,https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf,apple
+thing,iMac 24' 2021,481 kg,https://www.apple.com/environment/pdf/products/desktops/24-inch_iMac_PER_Apr2021.pdf,apple
+thing,Kindle,168 kg,https://gato-docs.its.txstate.edu/jcr:4646e321-9a29-41e5-880d-4c5ffe69e03e/thoughts_ereaders.pdf,amazon
+thing,Beef (100g),6 kg,https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability,
+thing,Chicken (100g),1 kg,https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability,
+thing,Jean,20 kg,https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets,
 thing,Paperback book,2.71 kg,https://www.researchgate.net/profile/Achille-B-Laurent/publication/255699164_Carbon_Footprint_Assessment_of_a_Paperback_Book/links/5a004010a6fdcc93611d83f9/Carbon-Footprint-Assessment-of-a-Paperback-Book.pdf,book|paper
