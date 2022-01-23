@@ -1,12 +1,25 @@
 [
   {
+    "name": "Something",
+    "kind": "thing",
+    "co2Eq": "3 tons",
+    "sources": [
+
+    ],
+    "keywords": [
+      "thomas"
+    ]
+  },
+  {
     "kind": "thing",
     "name": "iPhone 12",
     "co2Eq": "70 kg",
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -15,7 +28,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -24,7 +39,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -33,7 +50,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -42,7 +61,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -51,7 +72,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_Max_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -60,7 +83,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPad_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -69,7 +94,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPadPro_11-inch_PER_Apr2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -78,7 +105,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/ipad/iPadPro_12.9-inch_PER_Mar2020.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -87,7 +116,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -96,7 +127,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series7_PER_Sept2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -105,7 +138,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -114,7 +149,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -123,7 +160,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -132,7 +171,9 @@
     "sources": [
       "https://www.apple.com/environment/pdf/products/desktops/24-inch_iMac_PER_Apr2021.pdf"
     ],
-    "keywords": ["apple"]
+    "keywords": [
+      "apple"
+    ]
   },
   {
     "kind": "thing",
@@ -141,13 +182,17 @@
     "sources": [
       "https://gato-docs.its.txstate.edu/jcr:4646e321-9a29-41e5-880d-4c5ffe69e03e/thoughts_ereaders.pdf"
     ],
-    "keywords": ["amazon"]
+    "keywords": [
+      "amazon"
+    ]
   },
   {
     "kind": "thing",
     "name": "Beef (100g)",
     "co2Eq": "6 kg",
-    "keywords": [],
+    "keywords": [
+
+    ],
     "sources": [
       "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
     ]
@@ -156,7 +201,9 @@
     "kind": "thing",
     "name": "Chicken (100g)",
     "co2Eq": "1 kg",
-    "keywords": [],
+    "keywords": [
+
+    ],
     "sources": [
       "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
     ]
@@ -165,7 +212,9 @@
     "kind": "thing",
     "name": "Jean",
     "co2Eq": "20 kg",
-    "keywords": [],
+    "keywords": [
+
+    ],
     "sources": [
       "https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets"
     ]
@@ -174,7 +223,10 @@
     "kind": "thing",
     "name": "Paperback book",
     "co2Eq": "2.71 kg",
-    "keywords": ["book", "paper"],
+    "keywords": [
+      "book",
+      "paper"
+    ],
     "sources": [
       "https://www.researchgate.net/profile/Achille-B-Laurent/publication/255699164_Carbon_Footprint_Assessment_of_a_Paperback_Book/links/5a004010a6fdcc93611d83f9/Carbon-Footprint-Assessment-of-a-Paperback-Book.pdf"
     ]

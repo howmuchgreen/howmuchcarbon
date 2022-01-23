@@ -21,3 +21,5 @@ fields:
   - type: list
     name: keywords
     label: keywords
+pages:
+- library/things/things.json
