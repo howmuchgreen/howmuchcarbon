@@ -45,17 +45,6 @@
   },
   {
     "kind": "thing",
-    "name": "iPhone 13 mini",
-    "co2Eq": "61 kg",
-    "sources": [
-      "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
-    ],
-    "keywords": [
-      "apple"
-    ]
-  },
-  {
-    "kind": "thing",
     "name": "iPhone 13 Pro",
     "co2Eq": "69 kg",
     "sources": [
