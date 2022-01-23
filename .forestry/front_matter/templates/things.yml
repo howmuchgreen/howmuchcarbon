@@ -21,5 +21,7 @@ fields:
   - type: list
     name: keywords
     label: keywords
+  config:
+    labelField: name
 pages:
 - library/things/things.json
