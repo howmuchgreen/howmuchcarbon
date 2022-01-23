@@ -118,17 +118,6 @@
     "kind": "thing"
   },
   {
-    "name": "Something",
-    "kind": "thing",
-    "co2Eq": "3 tons",
-    "sources": [
-
-    ],
-    "keywords": [
-      "thomas"
-    ]
-  },
-  {
     "kind": "thing",
     "name": "iPhone 12",
     "co2Eq": "70 kg",
