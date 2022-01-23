@@ -1,5 +1,17 @@
 [
   {
+    "name": "Having a cat",
+    "co2Eq": "310 kg",
+    "keywords": [
+      "animal",
+      "pet"
+    ],
+    "sources": [
+
+    ],
+    "kind": "thing"
+  },
+  {
     "name": "Something",
     "kind": "thing",
     "co2Eq": "3 tons",
