@@ -1,5 +1,40 @@
 # @howmuchgreen/howmuchcarbon
 
+![npm](https://img.shields.io/npm/v/@howmuchgreen/howmuchcarbon)
+
+A library to access how much CO2Eq (equivalent in carbon dioxyde) a thing costs.
+
+A HTTP API is also available: `https://howmuch.green/api/macbook14`
+
+## Installation
+
+```bash
+npm i @howmuchgreen/howmuchcarbon
+```
+
+## Usage
+
+```ts
+import { howMuch } from "@howmuchgreen/howmuchcarbon";
+
+const macbookPro14 = howMuch("macbook pro 14").bestResult;
+console.log(macbookPro14.name); // 'MacBook Pro 14' 2021'
+console.log(macbookPro14.co2Eq.averageInGrams); // 271000
+console.log(macbookPro14.co2Eq.format()); // '271 kg'
+console.log(macbookPro14.sources); // ['https://www.apple.com/environment/…']
+```
+
+More examples can be found in the [usage-test directory](https://github.com/howmuchgreen/howmuchcarbon/tree/main/usage-tests).
+
+## Contributing
+
+1. Fork the repository
+2. Add new products in the [things.json file](https://github.com/howmuchgreen/howmuchcarbon/blob/main/library/things/things.json)
+3. Be sure to include a **valid source**, and more than one if needed
+4. Open a pull request
+
+---
+
 ## Dev setup
 
 ```bash
@@ -25,13 +60,7 @@ npm run dev
 
 ```
 
-# How to use this library
-
-## With Node.JS (CommonJS bundle)
-
-You can test how to use this library by looking at [the nodeJS usage-test project](../usage-tests/nodejs/README.md).
-
-# Publish the library
+## Publish the library
 
 ```bash
 npx np --any-branch --no-2fa
