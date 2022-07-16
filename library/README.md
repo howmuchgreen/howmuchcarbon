@@ -62,9 +62,6 @@ npm run build -- --watch
 # Bundle this as a library (esm & cjs bundles) to use this as a library
 npm run parcel
 
-# Bundle this as a library in watch mode
-npm run dev
-
 ```
 
 ## Publish the library

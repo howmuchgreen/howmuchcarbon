@@ -135,6 +135,7 @@ export const searchTrips = (query: string): TripWithScore[] => {
   const carbonInKg = distanceInKm * CO2EQ_KG_PER_KM_FLIGHT;
 
   const trip = Trip.build({
+    kind: "trip",
     origin: {
       name: origin.name,
       country: origin.country,

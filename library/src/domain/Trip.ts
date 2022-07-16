@@ -12,7 +12,7 @@ export class Trip {
   transports;
 
   constructor(props: TripProps) {
-    this.kind = "trip" as "trip";
+    this.kind = props.kind;
     this.origin = props.origin;
     this.destination = props.destination;
     this.distanceInKm = props.distanceInKm;
@@ -25,6 +25,7 @@ export class Trip {
 
   static propsCodec = pipe(
     Codec.struct({
+      kind: Codec.literal("trip"),
       distanceInKm: Codec.number,
       origin: City.codec,
       destination: City.codec,
@@ -35,4 +36,4 @@ export class Trip {
   static codec = pipe(this.propsCodec, Codec.compose(fromClassCodec(Trip)));
 }
 
-type TripProps = Omit<Codec.TypeOf<typeof Trip.propsCodec>, "kind">;
+type TripProps = Codec.TypeOf<typeof Trip.propsCodec>;

@@ -5,38 +5,10 @@
   "module": "dist/esm/bundle.js",
   "main": "dist/cjs/bundle.js",
   "types": "dist/types/bundle.d.ts",
-  "browser": "dist/browser.js",
   "scripts": {
-    "dev": "parcel watch",
     "build": "tsc -b",
     "test": "jest",
-    "parcel": "parcel build"
-  },
-  "targets": {
-    "types": {
-      "source": "src/index.ts"
-    },
-    "main": {
-      "isLibrary": true,
-      "source": "src/index.ts",
-      "engines": {
-        "node": ">= 14"
-      }
-    },
-    "module": {
-      "isLibrary": true,
-      "source": "src/index.ts",
-      "engines": {
-        "node": ">= 14"
-      }
-    },
-    "browser": {
-      "isLibrary": true,
-      "source": "src/browser.ts",
-      "engines": {
-        "browsers": "last 1 years, > 2%, not dead"
-      }
-    }
+    "parcel": "ts-node bundle.ts"
   },
   "repository": {
     "type": "git",
@@ -60,13 +32,15 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
+    "@parcel/config-default": "^2.6.2",
+    "@parcel/core": "^2.6.2",
+    "@swc/helpers": "^0.4.3",
     "all-the-cities": "^3.1.0",
     "fastest-levenshtein": "^1.0.12",
     "fp-ts": "^2.11.7",
     "io-ts": "^2.2.16",
     "match-sorter": "^6.3.1",
-    "np": "^7.6.0",
-    "@swc/helpers": "^0.4.3"
+    "np": "^7.6.0"
   },
   "files": [
     "dist"
