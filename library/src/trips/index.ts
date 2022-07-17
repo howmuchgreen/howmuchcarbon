@@ -1,10 +1,9 @@
-/// <reference path='./types.d.ts' />
-
-import cities, { City, LngLat } from "all-the-cities";
+import cities, { City } from "all-the-cities";
 import { distance } from "fastest-levenshtein";
 import { Co2Eq, Co2EqUnit, Trip } from "../domain";
 import { Transport } from "../domain/Transport";
 
+type LngLat = [number, number];
 type CityFormatted = City & { formattedName: string };
 type BestCity = { city: CityFormatted; score: number };
 type TripWithScore = { trip: Trip; score: number };
