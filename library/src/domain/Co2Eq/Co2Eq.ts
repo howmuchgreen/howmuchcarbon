@@ -18,7 +18,9 @@ export class Co2Eq {
 
     const number = this.averageInGrams / Math.pow(10, unit.magnitude);
     const unitString = number > 1 ? unit.plural : unit.singular;
-    return `${number} ${unitString}`;
+    return `${new Intl.NumberFormat(undefined, {
+      maximumSignificantDigits: 3,
+    }).format(number)} ${unitString}`;
   }
 
   static build(co2EqProps: Co2EqProps) {
