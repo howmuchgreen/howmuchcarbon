@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Coordinates {
+  int64 lat = 1;
+  int64 lng = 2;
+}
+
+message CityProto {
+  string name = 1;
+  int64 population = 2;
+  string country = 3;
+  Coordinates location = 4;
+}
+
+message CityArrayProto {
+  repeated CityProto cities = 1;
+}

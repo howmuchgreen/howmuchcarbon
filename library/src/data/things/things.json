@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Sneakers",
+    "co2Eq": "14 kg",
+    "keywords": ["shoes", "baskets", "footwear"],
+    "sources": [
+      "https://dspace.mit.edu/bitstream/handle/1721.1/102070/Olivetti_Manufacturing-focused.pdf?sequence=1&isAllowed=y"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Pixel 6",
+    "co2Eq": "85 kg",
+    "keywords": ["google", "smartphone"],
+    "sources": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-6-product-environmental-report.pdf"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Pixel 5a",
+    "co2Eq": "60 kg",
+    "keywords": ["google", "smartphone"],
+    "sources": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel-5a-with-5g-product-environmental-report.pdf"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Pixel 5",
+    "co2Eq": "85 kg",
+    "keywords": ["smartphone", "google"],
+    "sources": [
+      "https://www.gstatic.com/gumdrop/sustainability/pixel5-product-environmental-report.pdf"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Burger (beef)",
+    "co2Eq": "12 kg",
+    "keywords": ["food", "meat"],
+    "sources": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Burger (chicken)",
+    "co2Eq": "2 kg",
+    "keywords": ["food"],
+    "sources": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Burger (vegetarian)",
+    "co2Eq": "1 kg",
+    "keywords": ["food"],
+    "sources": [
+      "https://www.forbes.com/sites/davidrvetter/2020/10/05/got-beef-heres-what-your-hamburger-is-doing-to-the-climate/?sh=ff998515206f"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Having a kid",
+    "co2Eq": "1 ton",
+    "keywords": [],
+    "sources": [
+      "https://usbeketrica.com/fr/article/renoncer-a-faire-des-enfants-pour-des-raisons-ecologiques-n-aura-qu-un-effet-mineur"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Having a dog",
+    "co2Eq": "770 kg",
+    "keywords": ["pet", "animal"],
+    "sources": [
+      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
+    ],
+    "kind": "thing"
+  },
+  {
+    "name": "Having a cat",
+    "co2Eq": "310 kg",
+    "keywords": ["animal", "pet"],
+    "sources": [
+      "https://klima.com/blog/how-to-cut-your-pet-carbon-footprint-for-the-climate/"
+    ],
+    "kind": "thing"
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 12",
+    "co2Eq": "70 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_12_PER_Oct2020.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 13",
+    "co2Eq": "64 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_PER_Sept2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 13 mini",
+    "co2Eq": "61 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_mini_PER_Sept2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 13 Pro",
+    "co2Eq": "69 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_PER_Sept2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 13 Pro Max",
+    "co2Eq": "74 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_13_Pro_Max_PER_Sept2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPad 2021",
+    "co2Eq": "75 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/ipad/iPad_PER_Sept2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPad Pro 11' 2021",
+    "co2Eq": "99 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/ipad/iPadPro_11-inch_PER_Apr2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPad Pro 12.9' 2020",
+    "co2Eq": "140 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/ipad/iPadPro_12.9-inch_PER_Mar2020.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "Apple Watch Series 6",
+    "co2Eq": "36 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "MacBook Pro 13' 2020",
+    "co2Eq": "185 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookPro_PER_Nov2020.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "MacBook Pro 14' 2021",
+    "co2Eq": "271 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/notebooks/14-inch_MacBook_Pro_PER_Oct2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "MacBook Air 13' 2020",
+    "co2Eq": "161 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/notebooks/13-inch_MacBookAir_PER_Nov2020.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iMac 24' 2021",
+    "co2Eq": "481 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/desktops/24-inch_iMac_PER_Apr2021.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "Kindle",
+    "co2Eq": "168 kg",
+    "sources": [
+      "https://gato-docs.its.txstate.edu/jcr:4646e321-9a29-41e5-880d-4c5ffe69e03e/thoughts_ereaders.pdf"
+    ],
+    "keywords": ["amazon"]
+  },
+  {
+    "kind": "thing",
+    "name": "Beef (100g)",
+    "co2Eq": "6 kg",
+    "keywords": [],
+    "sources": [
+      "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Chicken (100g)",
+    "co2Eq": "1 kg",
+    "keywords": [],
+    "sources": [
+      "https://www.vox.com/22787178/beyond-impossible-plant-based-vegetarian-meat-climate-environmental-impact-sustainability"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Jean",
+    "co2Eq": "20 kg",
+    "keywords": [],
+    "sources": [
+      "https://actions.sumofus.org/a/it-s-time-to-put-a-stop-the-the-denim-industry-s-dirty-secrets"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "Paperback book",
+    "co2Eq": "2.71 kg",
+    "keywords": ["book", "paper"],
+    "sources": [
+      "https://www.researchgate.net/profile/Achille-B-Laurent/publication/255699164_Carbon_Footprint_Assessment_of_a_Paperback_Book/links/5a004010a6fdcc93611d83f9/Carbon-Footprint-Assessment-of-a-Paperback-Book.pdf"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "A bitcoin transaction",
+    "co2Eq": "370 kg",
+    "keywords": [],
+    "sources": [
+      "https://www.forbes.com/sites/philippsandner/2021/11/19/bitcoin-co2-emissions-from-an-investor-perspective-and-how-to-compensate-them/"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "One howmuch.green page",
+    "co2Eq": "0.02 g",
+    "keywords": ["this website"],
+    "sources": [
+      "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"
+    ]
+  },
+  {
+    "kind": "thing",
+    "name": "1h of Netflix",
+    "co2Eq": "40 g",
+    "keywords": ["streaming", "youtube", "video"],
+    "sources": [
+      "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"
+    ]
+  }
+]

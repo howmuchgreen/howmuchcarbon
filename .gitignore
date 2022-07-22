@@ -3,4 +3,3 @@ node_modules
 npm-debug.log*
 out-tsc
 .parcel-cache
-library/domain.*
