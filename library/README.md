@@ -60,7 +60,7 @@ npm test -- --watch
 npm run build -- --watch
 
 # Bundle this as a library (esm & cjs bundles) to use this as a library
-npm run parcel
+npm run package
 
 ```
 

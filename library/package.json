@@ -44,8 +44,6 @@
     "zx": "^7.0.7"
   },
   "dependencies": {
-    "@parcel/config-default": "^2.6.2",
-    "@parcel/core": "^2.6.2",
     "@swc/helpers": "^0.4.3",
     "all-the-cities": "^3.1.0",
     "base64-arraybuffer": "^1.0.2",
