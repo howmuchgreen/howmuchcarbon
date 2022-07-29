@@ -14,7 +14,7 @@ export const buildCitiesWith1000 = () => {
     .filter((city) => city.population >= 10_000)
     .map((city) => ({
       ...city,
-      name: formatCityName(city.name),
+      name: city.name,
       location: { lat: city.loc.coordinates[1], lng: city.loc.coordinates[0] },
       country: city.country,
     }));

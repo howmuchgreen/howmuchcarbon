@@ -1,20 +1,12 @@
-import { ResultObject, Thing, Trip } from "./domain";
-import { searchThings } from "./things";
-import { searchTrips } from "./trips";
+import { HowMuch, HowMuchArgs } from "./HowMuchClass";
+import cities from "./data/cities/cities-with-1000";
+import things from "./data/things";
 
-export const howMuch = (query: string): ResultObject => {
-  const results: (Trip | Thing)[] = [];
+const allData: HowMuchArgs = {
+  cities,
+  things,
+};
 
-  const thingsResults = searchThings(query);
-  const tripResult = searchTrips(query);
-
-  if (thingsResults.length === 0 && tripResult.length > 0) {
-    results.push(...tripResult.map(({ trip }) => trip));
-  } else {
-    results.push(...thingsResults);
-  }
-
-  return ResultObject.build({
-    results,
-  });
+export const howMuch = (searchString: string) => {
+  return new HowMuch(allData).search(searchString);
 };

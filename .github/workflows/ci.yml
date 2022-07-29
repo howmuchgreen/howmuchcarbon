@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: library
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bahmutov/npm-install@v1
+        with:
+          working-directory: library
+      - uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/nodejs
+      - working-directory: usage-tests/nodejs
+        run: npm run test
+      - uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/cra
+      - working-directory: usage-tests/cra
+        run: npm run test

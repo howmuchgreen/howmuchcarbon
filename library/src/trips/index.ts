@@ -1,27 +1,21 @@
-import cities, { City } from "all-the-cities";
+import { CityProto } from "../data";
+
 import { distance } from "fastest-levenshtein";
 import { Co2Eq, Co2EqUnit, Trip } from "../domain";
 import { Transport } from "../domain/Transport";
 
-type LngLat = [number, number];
-type CityFormatted = City & { formattedName: string };
-type BestCity = { city: CityFormatted; score: number };
+type LatLng = { lat: number; lng: number };
+type BestCity = { city: CityProto; score: number };
 type TripWithScore = { trip: Trip; score: number };
 
 const formatCityName = (name: string) => {
   return name.toLocaleLowerCase().replace(/ city$/, "");
 };
 
-// We reduce a bit the number of cities to speed-up the lookup,
-// which is using the levenshtein distance.
-const filteredCities: CityFormatted[] = cities
-  .filter((city) => city.population >= 10000)
-  .map((city) => ({ ...city, formattedName: formatCityName(city.name) }));
-
-const findBestCity = (name: string): BestCity => {
+const findBestCity = (cities: CityProto[], name: string): BestCity => {
   const formattedName = formatCityName(name);
 
-  return filteredCities.reduce<BestCity>(
+  return cities.reduce<BestCity>(
     (bestCity, city) => {
       // It’s important to take the population into account,
       // as 'Paris' for example exist in multiple places.
@@ -37,8 +31,7 @@ const findBestCity = (name: string): BestCity => {
       // so it seems more future-proof to take the population into
       // account only here.
       const score =
-        distance(formattedName, city.formattedName) -
-        city.population / 50_000_000;
+        distance(formattedName, city.name) - city.population / 50_000_000;
       if (score < bestCity.score) {
         return {
           score,
@@ -48,13 +41,14 @@ const findBestCity = (name: string): BestCity => {
 
       return bestCity;
     },
-    { city: filteredCities[0], score: Infinity }
+    { city: cities[0], score: Infinity }
   );
 };
 
 const findCities = (
+  cities: CityProto[],
   query: string
-): { cities: [City, City]; score: number } | undefined => {
+): { cities: [CityProto, CityProto]; score: number } | undefined => {
   // Our query is something like "san fransisco new york"
   // There can be only two cities, one at the start, and
   // one at the end.
@@ -76,8 +70,9 @@ const findCities = (
     const firstWord = words.slice(0, i).join(" ");
     const secondWord = words.slice(i, wordsCount).join(" ");
 
-    const firstCity = findBestCity(firstWord);
-    const secondCity = findBestCity(secondWord);
+    const firstCity = findBestCity(cities, firstWord);
+    const secondCity = findBestCity(cities, secondWord);
+    console.log(firstCity, secondCity);
 
     const score = firstCity.score + secondCity.score;
     if (score < bestScore) {
@@ -86,7 +81,12 @@ const findCities = (
     }
   }
 
-  return { cities: bestCities as any as [City, City], score: bestScore };
+  const result = {
+    cities: bestCities as any as [CityProto, CityProto],
+    score: bestScore,
+  };
+  console.log(result);
+  return bestCities ? result : undefined;
 };
 
 const deg2rad = (deg: number) => {
@@ -94,13 +94,13 @@ const deg2rad = (deg: number) => {
 };
 
 const getDistanceFromLatLonInKm = (
-  [lon1, lat1]: LngLat,
-  [lon2, lat2]: LngLat
+  { lat: lat1, lng: lng1 }: LatLng,
+  { lat: lat2, lng: lng2 }: LatLng
 ) => {
   // https://stackoverflow.com/questions/18883601/function-to-calculate-distance-between-two-coordinates
   const R = 6371; // Radius of the earth in km
   const dLat = deg2rad(lat2 - lat1); // deg2rad below
-  const dLon = deg2rad(lon2 - lon1);
+  const dLon = deg2rad(lng2 - lng1);
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(deg2rad(lat1)) *
@@ -115,8 +115,11 @@ const getDistanceFromLatLonInKm = (
 const CO2EQ_FLIGHT_SOURCES = ["https://www.carbonindependent.org/22.html"];
 const CO2EQ_KG_PER_KM_FLIGHT = 0.158;
 
-export const searchTrips = (query: string): TripWithScore[] => {
-  const citiesResult = findCities(query);
+export const searchTrips = (
+  cities: CityProto[],
+  query: string
+): TripWithScore[] => {
+  const citiesResult = findCities(cities, query);
   if (!citiesResult) {
     return [];
   }
@@ -127,8 +130,8 @@ export const searchTrips = (query: string): TripWithScore[] => {
   } = citiesResult;
 
   const distanceInKm = getDistanceFromLatLonInKm(
-    origin.loc.coordinates,
-    destination.loc.coordinates
+    origin.location!,
+    destination.location!
   );
 
   const carbonInKg = distanceInKm * CO2EQ_KG_PER_KM_FLIGHT;

@@ -1,4 +1,4 @@
-import { howMuch } from "./howMuch";
+import { howMuch } from "./HowMuchClass";
 
 describe("howMuch()", () => {
   it("should return some results when searching for iPhone", () => {
