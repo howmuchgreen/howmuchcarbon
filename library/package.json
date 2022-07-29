@@ -7,8 +7,8 @@
   "scripts": {
     "build": "tsc -b",
     "test": "jest",
-    "dev": "chokidar src/data -c 'npm run dev:rollup'",
-    "dev:rollup": "npm run rollup -- --watch --watch.onStart=\"npm run build-data\" --watch.onEnd=\"./scripts/copy-package-json.mjs\"",
+    "dev": "chokidar --initial src/ -i '**/*.pbf' -i '**/*.pb.ts' -c 'npm run dev:rollup'",
+    "dev:rollup": "npm run build-data && npm run rollup && ./scripts/copy-package-json.mjs",
     "rollup": "rollup -c rollup.config.js",
     "package": "rm -rf dist && npm run rollup && ./scripts/copy-package-json.mjs",
     "prepare": "npm run build-data && npm run package",

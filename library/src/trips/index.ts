@@ -31,7 +31,8 @@ const findBestCity = (cities: CityProto[], name: string): BestCity => {
       // so it seems more future-proof to take the population into
       // account only here.
       const score =
-        distance(formattedName, city.name) - city.population / 50_000_000;
+        distance(formattedName, formatCityName(city.name)) -
+        city.population / 50_000_000;
       if (score < bestCity.score) {
         return {
           score,
@@ -58,8 +59,7 @@ const findCities = (
 
   const words = query.split(" ");
   const wordsCount = words.length;
-
-  if (wordsCount < 2) {
+  if (wordsCount < 2 || words[1]?.trim()?.length === 0) {
     return;
   }
 
@@ -72,7 +72,6 @@ const findCities = (
 
     const firstCity = findBestCity(cities, firstWord);
     const secondCity = findBestCity(cities, secondWord);
-    console.log(firstCity, secondCity);
 
     const score = firstCity.score + secondCity.score;
     if (score < bestScore) {
@@ -85,7 +84,6 @@ const findCities = (
     cities: bestCities as any as [CityProto, CityProto],
     score: bestScore,
   };
-  console.log(result);
   return bestCities ? result : undefined;
 };
 

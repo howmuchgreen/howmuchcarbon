@@ -2,10 +2,6 @@ import { CityProto, CityArrayProto } from "./City.pb";
 import cities from "all-the-cities";
 import fs from "fs";
 
-const formatCityName = (name: string) => {
-  return name.toLocaleLowerCase().replace(/ city$/, "");
-};
-
 // We reduce a bit the number of cities to speed-up the lookup,
 // which is using the levenshtein distance.
 
