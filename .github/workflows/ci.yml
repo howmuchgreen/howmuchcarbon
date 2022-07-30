@@ -36,3 +36,10 @@ jobs:
       - name: test (cra)
         working-directory: usage-tests/cra
         run: npm run test
+      - name: npm install (rollup)
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/rollup
+      - name: test (rollup)
+        working-directory: usage-tests/rollup
+        run: npm run test

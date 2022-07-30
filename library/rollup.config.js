@@ -19,7 +19,7 @@ const onwarn = (warning, warn) => {
 export default [
   {
     plugins,
-    input: "src/index.ts",
+    input: ["src/index.ts"],
     output: {
       file: "dist/cjs/bundle.js",
       format: "cjs",
@@ -28,7 +28,7 @@ export default [
   },
   {
     plugins,
-    input: "src/index.ts",
+    input: ["src/index.ts"],
     output: {
       dir: "dist/esm",
       format: "esm",

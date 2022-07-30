@@ -2,7 +2,6 @@ const {
   howMuch,
   HowMuchResult,
   Co2Eq,
-  Co2EqUnit,
 } = require("@howmuchgreen/howmuchcarbon");
 
 printResult(howMuch("iPad").bestResult);

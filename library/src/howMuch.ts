@@ -1,10 +1,9 @@
 import { HowMuch, HowMuchArgs } from "./HowMuchClass";
-import cities from "./data/cities/cities-with-1000";
-import things from "./data/things";
+import { CITIES_ABOVE_10_000, ALL_THINGS } from "./data";
 
 const allData: HowMuchArgs = {
-  cities,
-  things,
+  cities: CITIES_ABOVE_10_000,
+  things: ALL_THINGS,
 };
 
 export const howMuch = (searchString: string) => {
