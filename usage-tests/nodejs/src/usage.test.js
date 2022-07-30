@@ -12,7 +12,7 @@ describe("howMuch()", () => {
       expect(result.kind).toBe("trip");
     });
     expect(HowMuchResult.isTrip(flightResults.bestResult)).toBe(true);
-    expect(flightResults.bestResult.origin?.name).toBe("paris");
-    expect(flightResults.bestResult.destination?.name).toBe("new york");
+    expect(flightResults.bestResult.origin?.name).toBe("Paris");
+    expect(flightResults.bestResult.destination?.name).toBe("New York City");
   });
 });
