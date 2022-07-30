@@ -9,14 +9,17 @@ const App = () => {
 
   return (
     <AppContainer>
-      <SearchInput onChange={(e) => setQueryString(e.target.value)} />
+      <SearchInput
+        onChange={(e) => setQueryString(e.target.value)}
+        data-testid={"search-input"}
+      />
       <ResultsList>
         {results.results.map((thingOrTrip, i) => {
           if (HowMuchResult.isThing(thingOrTrip)) {
             const { name, co2Eq, sources } = thingOrTrip;
 
             return (
-              <ResultsListElement key={i}>
+              <ResultsListElement key={i} data-testid="result-element">
                 <span>{name}</span>
                 <span>
                   <b>
@@ -34,7 +37,7 @@ const App = () => {
               thingOrTrip;
 
             return (
-              <ResultsListElement key={i}>
+              <ResultsListElement key={i} data-testid="result-element">
                 <span>
                   {origin.name}, {origin.country} - {destination.name},
                   {destination.country}
