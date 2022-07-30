@@ -9,4 +9,10 @@ export namespace HowMuchResult {
     thing: Thing.codec,
     trip: Trip.codec,
   });
+
+  export const isTrip = (result: HowMuchResult): result is Trip =>
+    result.kind === "trip";
+
+  export const isThing = (result: HowMuchResult): result is Thing =>
+    result.kind === "thing";
 }
