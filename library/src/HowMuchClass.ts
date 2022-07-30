@@ -5,8 +5,8 @@ import { ResultObject, Thing, Trip } from "./domain";
 import { searchTrips } from "./trips";
 
 export type HowMuchArgs = {
-  things?: Thing[];
-  cities?: CityProto[];
+  things?: () => Thing[];
+  cities?: () => CityProto[];
 };
 
 export class HowMuch {
@@ -14,8 +14,8 @@ export class HowMuch {
   cities;
 
   constructor(args: HowMuchArgs = {}) {
-    this.things = args.things || [];
-    this.cities = args.cities || [];
+    this.things = (args.things && args.things()) || [];
+    this.cities = (args.cities && args.cities()) || [];
   }
 
   searchThings = (query: string): Thing[] => {
