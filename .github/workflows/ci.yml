@@ -15,18 +15,24 @@ jobs:
         uses: arduino/setup-protoc@v1
         with:
           version: "3.19.4"
-      - uses: bahmutov/npm-install@v1
+      - name: npm install (library)
+        uses: bahmutov/npm-install@v1
         with:
           working-directory: library
-      - working-directory: library
+      - name: test (library)
+        working-directory: library
         run: npm run test
-      - uses: bahmutov/npm-install@v1
+      - name: npm install (nodejs)
+        uses: bahmutov/npm-install@v1
         with:
           working-directory: usage-tests/nodejs
-      - working-directory: usage-tests/nodejs
+      - name: test (nodejs)
+        working-directory: usage-tests/nodejs
         run: npm run test
-      - uses: bahmutov/npm-install@v1
+      - name: npm install (cra)
+        uses: bahmutov/npm-install@v1
         with:
           working-directory: usage-tests/cra
-      - working-directory: usage-tests/cra
+      - name: test (cra)
+        working-directory: usage-tests/cra
         run: npm run test
