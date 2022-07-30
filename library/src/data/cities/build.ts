@@ -5,7 +5,7 @@ import fs from "fs";
 // We reduce a bit the number of cities to speed-up the lookup,
 // which is using the levenshtein distance.
 
-export const buildCitiesWith1000 = () => {
+export const buildCitiesAbove10k = () => {
   const filteredCities: CityProto[] = cities
     .filter((city) => city.population >= 10_000)
     .map((city) => ({
@@ -16,7 +16,7 @@ export const buildCitiesWith1000 = () => {
     }));
 
   fs.writeFileSync(
-    `${__dirname}/all-cities.pbf`,
+    `${__dirname}/cities-above-10k.pbf`,
     CityArrayProto.encode({ cities: filteredCities }).finish()
   );
 };

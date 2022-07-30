@@ -1,3 +1,3 @@
-import { buildCitiesWith1000 } from "./src/data/cities/cities-with-1000/DataBuilder";
+import { buildCitiesAbove10k } from "./src/data/cities/build";
 
-buildCitiesWith1000();
+buildCitiesAbove10k();
