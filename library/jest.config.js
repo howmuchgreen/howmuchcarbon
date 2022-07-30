@@ -7,4 +7,12 @@ module.exports = {
       isolatedModules: true,
     },
   },
+  transform: {
+    "\\.(pbf)$": "<rootDir>/pbfTransformer.js",
+  },
+  modulePathIgnorePatterns: [
+    "<rootDir>/dist/",
+    "<rootDir>/published/",
+    "<rootDir>/out-tsc/",
+  ],
 };

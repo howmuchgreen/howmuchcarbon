@@ -16,4 +16,4 @@ export class ThingsDataProvider implements DataProvider<Thing> {
   }
 }
 
-export default new ThingsDataProvider();
+export const ALL_THINGS = new ThingsDataProvider();

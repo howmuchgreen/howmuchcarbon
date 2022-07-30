@@ -1,6 +1,6 @@
 import { CitiesDataProvider } from "./DataProvider";
 
 export * from "./DataProvider";
-export * from "./city";
+export * from "./City.pb";
 
-export default new CitiesDataProvider();
+export const CITIES_ABOVE_10_000 = new CitiesDataProvider();

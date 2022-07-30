@@ -1,5 +1,5 @@
 {
-  "name": "cra",
+  "name": "howmuchcarbon-usage-cra",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,7 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
-    "@howmuchgreen/howmuchcarbon": "file:../../library",
+    "@howmuchgreen/howmuchcarbon": "file:../../library/published",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",

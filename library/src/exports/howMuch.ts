@@ -1,1 +1,1 @@
-export * from "../howMuch";
+export * from "../HowMuchClass";

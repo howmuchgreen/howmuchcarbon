@@ -1,11 +1,16 @@
 import { searchTrips } from "..";
+import { CITIES_ABOVE_10_000 } from "../../data";
 
 describe("searchTrips", () => {
   it("should not find trips", () => {
-    expect(searchTrips("oneword")).toHaveLength(0);
+    expect(searchTrips(CITIES_ABOVE_10_000.getAll(), "oneword")).toHaveLength(
+      0
+    );
   });
 
   it("should find trips", () => {
-    expect(searchTrips("paris new york")).toHaveLength(1);
+    expect(
+      searchTrips(CITIES_ABOVE_10_000.getAll(), "paris new york")
+    ).toHaveLength(1);
   });
 });

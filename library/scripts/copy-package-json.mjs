@@ -26,8 +26,7 @@ const newPackageJson = {
   version,
   description,
   types,
-  module: "./index.js",
-  types: "./index.d.ts",
+  module: "src/index.js",
   main: "cjs/bundle.js",
   repository,
   keywords,
@@ -45,7 +44,7 @@ if (existingPackageJsonEquals(newPackageJson)) {
   echo(`-- ${path.relative(LIB_ROOT, TARGET_DIR)}/package.json unchanged`);
 } else {
   echo(`✅ ${path.relative(LIB_ROOT, TARGET_DIR)}/package.json changed`);
-  fs.writeJsonSync(`${TARGET_DIR}/package.json`, newPackageJson);
+  fs.writeJsonSync(`${TARGET_DIR}/package.json`, newPackageJson, { spaces: 2 });
 }
 
 fs.cpSync(DIST_ESM_ROOT, `${TARGET_DIR}/`, { recursive: true });

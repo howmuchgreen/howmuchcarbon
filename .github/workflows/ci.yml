@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: library
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Protoc
+        uses: arduino/setup-protoc@v1
+        with:
+          version: "3.19.4"
+      - name: npm install (library)
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: library
+      - name: test (library)
+        working-directory: library
+        run: npm run test
+      - name: npm install (nodejs)
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/nodejs
+      - name: test (nodejs)
+        working-directory: usage-tests/nodejs
+        run: npm run test
+      - name: npm install (cra)
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/cra
+      - name: test (cra)
+        working-directory: usage-tests/cra
+        run: npm run test
+      - name: npm install (rollup)
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/rollup
+      - name: test (rollup)
+        working-directory: usage-tests/rollup
+        run: npm run test
