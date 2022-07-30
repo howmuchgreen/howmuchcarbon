@@ -10,6 +10,12 @@ const plugins = [
   base64({ include: "**/*.pbf" }),
 ];
 
+const onwarn = (warning, warn) => {
+  if (/warning-treating-module-as-external-dependency/.test(warning.url))
+    return;
+  warn(warning);
+};
+
 export default [
   {
     plugins,
@@ -18,6 +24,7 @@ export default [
       file: "dist/cjs/bundle.js",
       format: "cjs",
     },
+    onwarn,
   },
   {
     plugins,
@@ -27,5 +34,6 @@ export default [
       format: "esm",
     },
     preserveModules: true,
+    onwarn,
   },
 ];
