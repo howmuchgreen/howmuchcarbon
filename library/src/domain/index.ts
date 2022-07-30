@@ -5,4 +5,3 @@ export * from "./City";
 export * from "./Kind";
 export * from "./HowMuchResult";
 export * from "./ResultObject";
-export * from "./DataProvider";

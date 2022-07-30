@@ -2,12 +2,11 @@ import * as Codec from "io-ts/lib/Codec";
 import { matchSorter } from "match-sorter";
 import { CityProto } from "./data";
 import { ResultObject, Thing, Trip } from "./domain";
-import { DataProvider } from "./domain/DataProvider";
 import { searchTrips } from "./trips";
 
 export type HowMuchArgs = {
-  things?: DataProvider<Thing>;
-  cities?: DataProvider<CityProto>;
+  things?: Thing[];
+  cities?: CityProto[];
 };
 
 export class HowMuch {
@@ -15,8 +14,8 @@ export class HowMuch {
   cities;
 
   constructor(args: HowMuchArgs = {}) {
-    this.things = args.things?.getAll() || [];
-    this.cities = args.cities?.getAll() || [];
+    this.things = args.things || [];
+    this.cities = args.cities || [];
   }
 
   searchThings = (query: string): Thing[] => {
