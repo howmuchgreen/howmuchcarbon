@@ -3,10 +3,6 @@ import ts from "rollup-plugin-ts";
 import { base64 } from "rollup-plugin-base64";
 import commonjs from "@rollup/plugin-commonjs";
 
-const watch = {
-  include: "src/data",
-};
-
 const plugins = [
   ts(),
   json({ compact: true }),
@@ -18,7 +14,6 @@ export default [
   {
     plugins,
     input: "src/index.ts",
-    watch,
     output: {
       file: "dist/cjs/bundle.js",
       format: "cjs",

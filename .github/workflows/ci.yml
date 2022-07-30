@@ -18,6 +18,8 @@ jobs:
       - uses: bahmutov/npm-install@v1
         with:
           working-directory: library
+      - working-directory: library
+        run: npm run test
       - uses: bahmutov/npm-install@v1
         with:
           working-directory: usage-tests/nodejs

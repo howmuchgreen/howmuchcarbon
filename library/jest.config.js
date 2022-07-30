@@ -7,4 +7,7 @@ module.exports = {
       isolatedModules: true,
     },
   },
+  transform: {
+    "\\.(pbf)$": "<rootDir>/pbfTransformer.js",
+  },
 };
