@@ -3,25 +3,25 @@ import commonjs from "@rollup/plugin-commonjs";
 
 export default [
   {
-    input: "example-minimal.js",
+    input: "minimal.js",
     output: {
-      file: "dist/example-minimal.js",
+      file: "dist/rollup/minimal.js",
       format: "cjs",
     },
     plugins: [resolve({ jsnext: true, main: true }), commonjs()],
   },
   {
-    input: "example-things.js",
+    input: "things.js",
     output: {
-      file: "dist/example-things.js",
+      file: "dist/rollup/things.js",
       format: "cjs",
     },
     plugins: [resolve({ jsnext: true, main: true }), commonjs()],
   },
   {
-    input: "example-all.js",
+    input: "all.js",
     output: {
-      file: "dist/example-all.js",
+      file: "dist/rollup/all.js",
       format: "cjs",
     },
     plugins: [resolve({ jsnext: true, main: true }), commonjs()],

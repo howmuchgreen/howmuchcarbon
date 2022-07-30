@@ -1,11 +1,15 @@
-import { howMuch, HowMuchResult } from "@howmuchgreen/howmuchcarbon";
+import {
+  HowMuch,
+  HowMuchResult,
+  ALL_THINGS,
+} from "@howmuchgreen/howmuchcarbon";
 import { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 
 const App = () => {
   const [queryString, setQueryString] = useState("");
-  const results = howMuch(queryString);
+  const results = new HowMuch({ things: ALL_THINGS }).search(queryString);
 
   return (
     <AppContainer>

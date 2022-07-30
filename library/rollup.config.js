@@ -21,9 +21,10 @@ export default [
     plugins,
     input: ["src/index.ts"],
     output: {
-      file: "dist/cjs/bundle.js",
+      dir: "dist/cjs",
       format: "cjs",
     },
+    preserveModules: true,
     onwarn,
   },
   {

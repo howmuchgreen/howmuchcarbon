@@ -1,8 +1,8 @@
 #!/usr/bin/env zx
 import "zx/globals";
 const LIB_ROOT = path.resolve(`${__dirname}`, `..`);
-const TARGET_DIR = path.resolve(`${LIB_ROOT}`, `published`);
-const TARGET_CJS_DIR = path.resolve(`${LIB_ROOT}`, `published/cjs`);
+const TARGET_DIR = path.resolve(`${LIB_ROOT}`, `dist/published`);
+const TARGET_CJS_DIR = path.resolve(`${LIB_ROOT}`, `dist/published/cjs`);
 const DIST_ESM_ROOT = path.resolve(`${LIB_ROOT}`, `dist/esm`);
 const DIST_CJS_ROOT = path.resolve(`${LIB_ROOT}`, `dist/cjs`);
 
@@ -26,8 +26,8 @@ const newPackageJson = {
   version,
   description,
   types,
-  module: "src/index.js",
-  main: "cjs/bundle.js",
+  module: "index.js",
+  main: "cjs/index.js",
   repository,
   keywords,
   author,
