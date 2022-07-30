@@ -38,7 +38,7 @@ More examples can be found in the [usage-test directory](https://github.com/howm
 ## How to add products to the database?
 
 1. Fork the repository
-2. Add new products in the [things.json file](https://github.com/howmuchgreen/howmuchcarbon/blob/main/library/things/things.json)
+2. Add new products in the [things.json file](https://github.com/howmuchgreen/howmuchcarbon/blob/main/library/src/data/things/things.json)
 3. Be sure to include a **valid source**, and more than one if needed
 4. Open a pull request
 

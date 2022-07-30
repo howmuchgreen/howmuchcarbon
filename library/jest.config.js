@@ -10,4 +10,9 @@ module.exports = {
   transform: {
     "\\.(pbf)$": "<rootDir>/pbfTransformer.js",
   },
+  modulePathIgnorePatterns: [
+    "<rootDir>/dist/",
+    "<rootDir>/published/",
+    "<rootDir>/out-tsc/",
+  ],
 };
