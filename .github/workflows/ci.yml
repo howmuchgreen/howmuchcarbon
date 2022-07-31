@@ -19,6 +19,13 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           working-directory: library
+      - name: npm install (remix)
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: usage-tests/remix
+      - name: test (remix)
+        working-directory: usage-tests/remix
+        run: npm run test
       - name: test (library)
         working-directory: library
         run: npm run test
