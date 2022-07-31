@@ -13,14 +13,15 @@ const minifiedSize = async (file) => {
 };
 
 const maxSizes = [
-  ["minimal", "50KB"],
-  ["things", "100KB"],
-  ["all", "1MB"],
+  ["rollup/minimal", "50KB"],
+  ["rollup/things", "100KB"],
+  ["rollup/all", "1MB"],
+  ["webpack/main", "500KB"],
 ];
 
 let errors = false;
 for (const [name, maxSize] of maxSizes) {
-  const bundleSize = await minifiedSize(`example-${name}`);
+  const bundleSize = await minifiedSize(`${name}`);
   if (size(bundleSize) > size(maxSize)) {
     errors = true;
     console.log(`${name} is too big: ${chalk.red(bundleSize)} > ${maxSize}`);

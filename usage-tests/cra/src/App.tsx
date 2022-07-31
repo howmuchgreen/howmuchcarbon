@@ -1,11 +1,41 @@
-import { howMuch, HowMuchResult } from "@howmuchgreen/howmuchcarbon";
+import {
+  HowMuch,
+  HowMuchResult,
+  ALL_THINGS,
+} from "@howmuchgreen/howmuchcarbon";
+import { CityArrayProto } from "@howmuchgreen/howmuchcarbon/cjs/data/cities/City.pb";
 import { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 
 const App = () => {
   const [queryString, setQueryString] = useState("");
-  const results = howMuch(queryString);
+  const cities = CityArrayProto.fromJSON({
+    cities: [
+      {
+        name: "New York City",
+        country: "US",
+        population: 8175133,
+        location: {
+          lat: 40.73061,
+          lng: -73.935242,
+        },
+      },
+      {
+        name: "Paris",
+        country: "FR",
+        population: 2244000,
+        location: {
+          lat: 48.856614,
+          lng: 2.352222,
+        },
+      },
+    ],
+  }).cities;
+  const results = new HowMuch({
+    things: ALL_THINGS,
+    cities: () => cities,
+  }).search(queryString);
 
   return (
     <AppContainer>

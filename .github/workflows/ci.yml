@@ -36,6 +36,9 @@ jobs:
       - name: test (cra)
         working-directory: usage-tests/cra
         run: npm run test
+      - name: check bundle size (cra)
+        run: npm run test-sizes
+        working-directory: usage-tests/cra
       - name: npm install (rollup)
         uses: bahmutov/npm-install@v1
         with:
