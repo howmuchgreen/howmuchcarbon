@@ -8,7 +8,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "test": "./test.mjs"
+    "test": "./test.mjs",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@howmuchgreen/howmuchcarbon": "file:../../library/dist/published",
