@@ -16,7 +16,7 @@ const maxSizes = [
   ["rollup/minimal", "50KB"],
   ["rollup/things", "100KB"],
   ["rollup/all", "1MB"],
-  ["webpack/main", "500KB"],
+  ["webpack/main", "100KB"],
 ];
 
 let errors = false;

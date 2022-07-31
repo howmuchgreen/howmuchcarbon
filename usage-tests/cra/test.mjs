@@ -6,7 +6,9 @@ $.verbose = false;
 
 await $`npm run build`;
 
-const files = (await $`ls build/static/js/*.js`).stdout.trim().split("\n");
+const files = (await $`find build/static/js -name '*.js'`).stdout
+  .trim()
+  .split("\n");
 
 const minifiedSize = async (file) => {
   const { stdout } = await $`npx gzip-size ${file}`.quiet();
