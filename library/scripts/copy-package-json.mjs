@@ -6,7 +6,7 @@ const TARGET_CJS_DIR = path.resolve(`${LIB_ROOT}`, `dist/published/cjs`);
 const DIST_ESM_ROOT = path.resolve(`${LIB_ROOT}`, `dist/esm`);
 const DIST_CJS_ROOT = path.resolve(`${LIB_ROOT}`, `dist/cjs`);
 
-let {
+const {
   name,
   version,
   description,
