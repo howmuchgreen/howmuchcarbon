@@ -47,8 +47,13 @@ More examples can be found in the [usage-test directory](https://github.com/howm
 ## Dev setup
 
 ```bash
+cd library
+
 # Install dependencies
 npm install
+
+# Install protoc binary
+brew install protobuf # MacOS. For other platforms, see protoc releases there: https://github.com/protocolbuffers/protobuf/releases
 
 # Run tests
 npm test
