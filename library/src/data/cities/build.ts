@@ -1,6 +1,7 @@
 import { CityProto, CityArrayProto } from "./City.pb";
 import cities from "all-the-cities";
 import fs from "fs";
+import { join } from "path";
 
 // We reduce a bit the number of cities to speed-up the lookup,
 // which is using the levenshtein distance.
@@ -16,7 +17,7 @@ export const buildCitiesAbove10k = () => {
     }));
 
   fs.writeFileSync(
-    `${__dirname}/cities-above-10k.pbf`,
+    join(__dirname, "/cities-above-10k.pbf"),
     CityArrayProto.encode({ cities: filteredCities }).finish()
   );
 };
