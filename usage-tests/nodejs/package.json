@@ -1,5 +1,5 @@
 {
-  "name": "nodejs",
+  "name": "howmuchcarbon-usage-nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@howmuchgreen/howmuchcarbon": "file:../../library"
+    "@howmuchgreen/howmuchcarbon": "file:../../library/dist/published"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",

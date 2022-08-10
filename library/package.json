@@ -2,13 +2,18 @@
   "name": "@howmuchgreen/howmuchcarbon",
   "version": "0.6.0",
   "description": "",
-  "module": "dist/esm/bundle.js",
-  "main": "dist/cjs/bundle.js",
-  "types": "dist/types/bundle.d.ts",
+  "main": "src/index.js",
+  "module": "./dist/esm/index.js",
   "scripts": {
     "build": "tsc -b",
     "test": "jest",
-    "parcel": "ts-node bundle.ts"
+    "dev": "chokidar --initial src/ -i '**/*.pbf' -i '**/*.pb.ts' -c 'npm run package'",
+    "dev:rollup": "npm run build-data && npm run rollup && ./scripts/copy-package-json.mjs",
+    "rollup": "rollup -c rollup.config.js",
+    "package": "rm -rf dist published && npm run rollup && ./scripts/copy-package-json.mjs",
+    "prepare": "npm run build-data && npm run package",
+    "build-data": "npm run protoc && ts-node ./buildData.ts",
+    "protoc": "protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_opt=fileSuffix=.pb --ts_proto_opt=esModuleInterop=true --ts_proto_out=./src/data/ --ts_proto_opt=useOptionals=none -I=./src/data ./src/data/**/*.proto"
   },
   "repository": {
     "type": "git",
@@ -22,26 +27,35 @@
   },
   "homepage": "https://github.com/howmuchgreen/howmuchcarbon#readme",
   "devDependencies": {
-    "@parcel/packager-ts": "^2.6.2",
-    "@parcel/transformer-typescript-types": "^2.6.2",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "@types/all-the-cities": "^3.1.0",
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^27.5.2",
+    "all-the-cities": "^3.1.0",
+    "chokidar": "^3.5.3",
+    "chokidar-cli": "^3.0.0",
     "jest": "^27.4.5",
-    "parcel": "^2.6.2",
+    "pbf": "^3.2.1",
+    "rollup": "^2.77.0",
+    "rollup-plugin-base64": "^1.0.1",
+    "rollup-plugin-ts": "^2.0.4",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "ts-proto": "^1.117.1",
+    "typescript": "^4.5.4",
+    "zx": "^7.0.7"
   },
   "dependencies": {
-    "@parcel/config-default": "^2.6.2",
-    "@parcel/core": "^2.6.2",
     "@swc/helpers": "^0.4.3",
-    "all-the-cities": "^3.1.0",
+    "base64-arraybuffer": "^1.0.2",
     "fastest-levenshtein": "^1.0.12",
     "fp-ts": "^2.11.7",
     "io-ts": "^2.2.16",
+    "long": "^5.2.0",
     "match-sorter": "^6.3.1",
-    "np": "^7.6.0"
+    "np": "^7.6.0",
+    "protobufjs": "^7.0.0"
   },
   "files": [
     "dist"

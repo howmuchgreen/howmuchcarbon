@@ -38,7 +38,7 @@ More examples can be found in the [usage-test directory](https://github.com/howm
 ## How to add products to the database?
 
 1. Fork the repository
-2. Add new products in the [things.json file](https://github.com/howmuchgreen/howmuchcarbon/blob/main/library/things/things.json)
+2. Add new products in the [things.json file](https://github.com/howmuchgreen/howmuchcarbon/blob/main/library/src/data/things/things.json)
 3. Be sure to include a **valid source**, and more than one if needed
 4. Open a pull request
 
@@ -47,6 +47,11 @@ More examples can be found in the [usage-test directory](https://github.com/howm
 ## Dev setup
 
 ```bash
+cd library
+
+# Install protoc binary
+brew install protobuf # MacOS. For other platforms, see protoc releases there: https://github.com/protocolbuffers/protobuf/releases
+
 # Install dependencies
 npm install
 
@@ -60,7 +65,7 @@ npm test -- --watch
 npm run build -- --watch
 
 # Bundle this as a library (esm & cjs bundles) to use this as a library
-npm run parcel
+npm run package
 
 ```
 

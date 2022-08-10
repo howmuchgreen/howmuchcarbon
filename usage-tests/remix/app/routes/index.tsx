@@ -2,43 +2,59 @@ import {
   HowMuch,
   HowMuchResult,
   ALL_THINGS,
+  CITIES_ABOVE_10_000,
+  CityProto,
+  Thing,
 } from "@howmuchgreen/howmuchcarbon";
-import { CityArrayProto } from "@howmuchgreen/howmuchcarbon/cjs/data/cities/City.pb";
-import { useState } from "react";
 import styled from "styled-components";
-import "./App.css";
+import { useState } from "react";
+import { LoaderFunction } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
+import { flow } from "fp-ts/function";
+import * as Either from "fp-ts/Either";
 
-const App = () => {
-  const [queryString, setQueryString] = useState("");
-  const cities = CityArrayProto.fromJSON({
-    cities: [
-      {
-        name: "New York City",
-        country: "US",
-        population: 8175133,
-        location: {
-          lat: 40.73061,
-          lng: -73.935242,
-        },
-      },
-      {
-        name: "Paris",
-        country: "FR",
-        population: 2244000,
-        location: {
-          lat: 48.856614,
-          lng: 2.352222,
-        },
-      },
-    ],
-  }).cities;
-  const results = new HowMuch({
-    things: ALL_THINGS,
-    cities: () => cities,
-  }).search(queryString);
+export const loader: LoaderFunction = async () => {
+  return {
+    cities: CITIES_ABOVE_10_000(),
+    things: ALL_THINGS(),
+  };
+};
+
+export default function Index() {
+  const { cities, things } = useLoaderData();
+
+  const decodedCities = cities.map(CityProto.fromJSON);
+  const decodedThings = things.map(
+    flow(
+      Thing.codec.decode,
+      Either.getOrElseW(() => null)
+    )
+  );
 
   return (
-    <AppContainer>
+    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+      <h1>Welcome to Remix</h1>
+      <SearchComponent
+        cities={decodedCities}
+        things={decodedThings}
+      ></SearchComponent>
+    </div>
+  );
+}
+
+const SearchComponent = ({
+  cities,
+  things,
+}: {
+  cities: CityProto[];
+  things: Thing[];
+}) => {
+  const [queryString, setQueryString] = useState("");
+  const results = new HowMuch({
+    cities: () => cities,
+  }).search(queryString);
+  return (
+    <>
       <SearchInput
         onChange={(e) => setQueryString(e.target.value)}
         data-testid={"search-input"}
@@ -88,7 +104,7 @@ const App = () => {
           }
         })}
       </ResultsList>
-    </AppContainer>
+    </>
   );
 };
 
@@ -96,10 +112,6 @@ const SearchInput = styled.input`
   margin: 2px;
   width: 300px;
   font: 1.9em sans-serif;
-`;
-
-const AppContainer = styled.div`
-  margin: 20px;
 `;
 
 const ResultsList = styled.div`
@@ -114,5 +126,3 @@ const ResultsListElement = styled.div`
   justify-content: space-between;
   margin-top: 3px;
 `;
-
-export default App;
