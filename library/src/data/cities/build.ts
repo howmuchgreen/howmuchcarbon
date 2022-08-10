@@ -17,7 +17,7 @@ export const buildCitiesAbove10k = () => {
     }));
 
   fs.writeFileSync(
-    join(__dirname, "/cities-above-10k.pbf"),
+    join(__dirname, "cities-above-10k.pbf"),
     CityArrayProto.encode({ cities: filteredCities }).finish()
   );
 };
