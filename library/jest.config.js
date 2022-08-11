@@ -1,10 +1,18 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
-  testMatch: ["**/*.test.ts"],
+  testMatch: ["**/*.test.ts", "**/__tests__/*.ts"],
   globals: {
     "ts-jest": {
       isolatedModules: true,
     },
   },
+  transform: {
+    "\\.(pbf)$": "<rootDir>/pbfTransformer.js",
+  },
+  modulePathIgnorePatterns: [
+    "<rootDir>/dist/",
+    "<rootDir>/published/",
+    "<rootDir>/out-tsc/",
+  ],
 };

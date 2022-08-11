@@ -1,0 +1,31 @@
+{
+  "name": "howmuchcarbon-usage-rollup",
+  "version": "0.1.0",
+  "description": "Example of howmuchcarbon usage with Rollup",
+  "main": "example.js",
+  "author": "Thomas Carli <thomas.carli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@howmuchgreen/howmuchcarbon": "file:../../library/dist/published",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "babel-minify": "^0.5.2",
+    "chalk": "^5.0.1",
+    "filesize-parser": "^1.5.0",
+    "gzip-size-cli": "^1.0.0",
+    "pretty-bytes-cli": "^2.0.0",
+    "rollup": "^2.76.0",
+    "webpack": "4",
+    "webpack-cli": "^4.10.0",
+    "zx": "^7.0.7"
+  },
+  "scripts": {
+    "build": "rollup -c && npm run webpack",
+    "test": "./test.mjs",
+    "prepare": "npm run build",
+    "webpack": "webpack --output-path dist/webpack ./minimal.js"
+  },
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.5.0"
+  }
+}

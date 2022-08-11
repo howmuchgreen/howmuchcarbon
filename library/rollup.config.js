@@ -1,30 +1,40 @@
 import json from "@rollup/plugin-json";
 import ts from "rollup-plugin-ts";
-import { nodeResolve } from "@rollup/plugin-node-resolve";
+import { base64 } from "rollup-plugin-base64";
 import commonjs from "@rollup/plugin-commonjs";
 
 const plugins = [
   ts(),
   json({ compact: true }),
-  nodeResolve(),
   commonjs(),
+  base64({ include: "**/*.pbf" }),
 ];
+
+const onwarn = (warning, warn) => {
+  if (/warning-treating-module-as-external-dependency/.test(warning.url))
+    return;
+  warn(warning);
+};
 
 export default [
   {
     plugins,
-    input: "src/index.ts",
+    input: ["src/index.ts"],
     output: {
-      file: "dist/cjs/bundle.js",
+      dir: "dist/cjs",
       format: "cjs",
     },
+    preserveModules: true,
+    onwarn,
   },
   {
     plugins,
-    input: "src/index.ts",
+    input: ["src/index.ts"],
     output: {
-      file: "dist/esm/bundle.js",
+      dir: "dist/esm",
       format: "esm",
     },
+    preserveModules: true,
+    onwarn,
   },
 ];
