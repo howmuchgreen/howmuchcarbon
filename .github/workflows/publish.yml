@@ -23,7 +23,7 @@ jobs:
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
-          working_directory: library/published
+          working_directory: library/dist/published
           branches: |
             [
               'main',
