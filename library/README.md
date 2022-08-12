@@ -18,15 +18,24 @@ npm i @howmuchgreen/howmuchcarbon
 ## Usage
 
 ```ts
-import { searchThings, searchTrips } from "@howmuchgreen/howmuchcarbon";
+import {
+  HowMuch,
+  CITIES_ABOVE_10_000,
+  ALL_THINGS,
+} from "@howmuchgreen/howmuchcarbon";
 
-const [macbookPro14] = searchThings("macbook pro 14");
+const howMuch = new HowMuch({
+  cities: CITIES_ABOVE_10_000,
+  things: ALL_THINGS,
+});
+
+const [macbookPro14] = howMuch.searchThings("macbook pro 14");
 console.log(macbookPro14.name); // 'MacBook Pro 14' 2021'
 console.log(macbookPro14.co2Eq.averageInGrams); // 271000
 console.log(macbookPro14.co2Eq.format()); // '271 kg'
 console.log(macbookPro14.sources); // ['https://www.apple.com/environment/…']
 
-const tripParisNewYork = searchTrips("paris new york")[0];
+const tripParisNewYork = howMuch.searchTrips("paris new york")[0];
 console.log(tripParisNewYork.origin.name); // 'Paris'
 console.log(tripParisNewYork.destination.name); // 'New York City'
 console.log(tripParisNewYork.transports[0].co2Eq.averageInGrams); // 922252

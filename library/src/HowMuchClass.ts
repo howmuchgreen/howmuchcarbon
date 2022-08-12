@@ -26,14 +26,20 @@ export class HowMuch {
     return thingsResults;
   };
 
+  searchTrips = (query: string): Trip[] => {
+    const tripResults = searchTrips(this.cities, query);
+
+    return tripResults.map(({ trip }) => trip);
+  };
+
   search = (query: string): ResultObject => {
     const results: (Trip | Thing)[] = [];
 
     const thingsResults = this.searchThings(query);
-    const tripResult = searchTrips(this.cities, query);
+    const tripResults = searchTrips(this.cities, query);
 
-    if (thingsResults.length === 0 && tripResult.length > 0) {
-      results.push(...tripResult.map(({ trip }) => trip));
+    if (thingsResults.length === 0 && tripResults.length > 0) {
+      results.push(...tripResults.map(({ trip }) => trip));
     } else {
       results.push(...thingsResults);
     }
