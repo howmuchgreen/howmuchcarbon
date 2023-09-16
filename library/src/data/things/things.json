@@ -136,6 +136,78 @@
   },
   {
     "kind": "thing",
+    "name": "iPhone 14",
+    "co2Eq": "61 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_14_PER_Sept2022.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 14 Plus",
+    "co2Eq": "68 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_14_Plus_PER_Sept2022.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 14 Pro",
+    "co2Eq": "65 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_14_Pro_PER_Sept2022.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 14 Pro Max",
+    "co2Eq": "73 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_14_Pro_Max_PER_Sept2022.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 15",
+    "co2Eq": "56 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_15_and_iPhone_15_Plus_PER_Sept2023.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 15 Plus",
+    "co2Eq": "61 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_15_and_iPhone_15_Plus_PER_Sept2023.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 15 Pro",
+    "co2Eq": "66 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_15_Pro_and_iPhone_15_Pro_Max_Sept2023.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
+    "name": "iPhone 15 Pro Max",
+    "co2Eq": "75 kg",
+    "sources": [
+      "https://www.apple.com/environment/pdf/products/iphone/iPhone_15_Pro_and_iPhone_15_Pro_Max_Sept2023.pdf"
+    ],
+    "keywords": ["apple"]
+  },
+  {
+    "kind": "thing",
     "name": "iPad 2021",
     "co2Eq": "75 kg",
     "sources": [
